@@ -78,7 +78,8 @@ Copy code
 ### 🔐 Authentication & Security
 - JSON Web Tokens (JWT)  
 - Sessions & Cookies  
-- Role-based access control  
+- Role-based access control
+- OAuth 
 
 ---
 
