@@ -75,11 +75,14 @@ Copy code
 
 ---
 
-### 🔐 Authentication & Security
+### 🔐 Authentication & Authorization Security
 - JSON Web Tokens (JWT)  
 - Sessions & Cookies  
-- Role-based access control
-- OAuth 
+- Role-based access control (RBAC)
+- Login / Register system
+- Protected routes & middleware
+- Secure APIs (auth guards)
+- Password hashing (bcrypt)
 
 ---
 
