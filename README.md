@@ -40,9 +40,6 @@ Each project represents a learning milestone and focuses on **real-world use cas
 ├── ci-cd/
 ├── cloud-deployment/
 
-yaml
-Copy code
-
 ---
 
 ## 🧑‍💻 Tech Stack
