@@ -182,7 +182,7 @@ Each project represents a learning milestone and focuses on **real-world use cas
 
 ## 📅 Learning Roadmap Overview
 
-- **Frontend:** 6 Months  
+- **Frontend:** 6 Months & 11 Days  
 - **Backend:** 4 Months & 20 Days  
 - **DevOps & Deployment:** 1 Month  
 
@@ -209,7 +209,8 @@ This roadmap focuses on **hands-on learning** and building **production-ready ap
 
 - GitHub: *(You are here 😊)*
 - Portfolio: *(Coming Late 2026)*
-- LinkedIn: *([Abdikadir Jerry](https://www.linkedin.com/in/abdikadir-ali-aden-093697314))*
+- LinkedIn: *([AbdikadirJerry](https://www.linkedin.com/in/abdikadir-ali-aden-093697314))*
+- Twitter: *([@abdikadirjerry](https://x.com/abdikadirjerry?s=21))*
 
 ---
 
