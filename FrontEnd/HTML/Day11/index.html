@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day11 Advanced From</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Full Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+        />
+        <br /><br />
+
+        <label for="phone">Phone</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="9 digit number"
+          pattern="[0-9]{9}"
+          required
+        />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Message</legend>
+
+        <label for="msg">Your Message</label><br />
+        <textarea id="msg" name="msg" required></textarea>
+      </fieldset>
+
+      <br />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
