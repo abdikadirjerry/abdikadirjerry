@@ -33,6 +33,7 @@ Each project represents a learning milestone and focuses on **real-world use cas
 
 📁 fullstack/
 ├── fullstack-applications/
+├── typescript-projects/
 ├── capstone-projects/
 
 📁 devops/
