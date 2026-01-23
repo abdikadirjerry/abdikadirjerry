@@ -211,7 +211,6 @@ This roadmap focuses on **hands-on learning** and building **production-ready ap
 - GitHub: *(You are here 😊)*
 - Portfolio: *(Coming Late 2026)*
 - LinkedIn: *([AbdikadirJerry](https://www.linkedin.com/in/abdikadir-ali-aden-093697314))*
-- Twitter: *([@abdikadirjerry](https://x.com/abdikadirjerry?s=91))*
 
 ---
 
