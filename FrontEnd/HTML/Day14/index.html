@@ -1,11 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day14 Advanced HTML Elements</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- FAQ Section -->
+    <section>
+      <h2>FAQ</h2>
+      <details>
+        <summary>What is this page about?</summary>
+        <p>
+          This page demonstrates advanced HTML elements like details, progress,
+          meter, SVG, and code blocks.
+        </p>
+      </details>
+      <details>
+        <summary>How is project progress shown?</summary>
+        <p>
+          We use the <code>&lt;progress&gt;</code> element to visually represent
+          completion.
+        </p>
+      </details>
+      <details>
+        <summary>Why is the server load red?</summary>
+        <p>
+          The <code>&lt;meter&gt;</code> element is configured with a high value
+          near the maximum.
+        </p>
+      </details>
+    </section>
+
+    <!-- Status Dashboard -->
+    <section>
+      <div>
+        <h2>Status Dashboard</h2>
+        <span>Project Completion</span>
+        <progress value="72" max="100"></progress>
+        <span>72%</span>
+      </div>
+      <div>
+        <span>Server Load</span>
+        <meter
+          min="0"
+          max="100"
+          low="30"
+          high="70"
+          optimum="40"
+          value="90"
+        ></meter>
+        <span>90% (High)</span>
+      </div>
+    </section>
+
+    <!-- Technical Note -->
+    <section>
+      <h2>Technical Notes</h2>
+      <pre><code><mark>.btn-primary</mark>{
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }</code></pre>
+    </section>
+
+    <!-- Inline SVG -->
+    <section>
+      <h2>inline SVG Checkmark</h2>
+      <!-- Simple checkmark SVG with changed fill color -->
+      <svg
+        width="80"
+        height="80"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path fill="#22c55e" d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4z" />
+      </svg>
+    </section>
+  </body>
 </html>
