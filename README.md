@@ -67,7 +67,7 @@ Each project represents a learning milestone and focuses on **real-world use cas
 
 ### 🗄️ Databases & ORMs
 - MongoDB  
-- Mongoose  
+- Mongoose ODM 
 - PostgreSQL  
 - Prisma ORM  
 
