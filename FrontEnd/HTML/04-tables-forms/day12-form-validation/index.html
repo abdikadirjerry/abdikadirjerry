@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day12 Form Validation</title>
+  </head>
+  <body>
+    <form action="submit" method="post">
+      <label for="fullname">Full name</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        minlength="4"
+        maxlength="20"
+        required
+      />
+      <br /><br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+      <br /><br />
+      <label for="phone">phone</label>
+      <input type="tel" name="phone" id="phone" pattern="[0-9]{9}" required />
+      <br /><br />
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+      <br /><br />
+      <fieldset>
+        <legend>Sex</legend>
+        <label>
+          <input type="radio" name="sex" value="male" required />Male
+        </label>
+        <label>
+          <input type="radio" name="sex" value="female" required />Female
+        </label>
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Skills</legend>
+        <label>
+          <input type="checkbox" name="skills[]" value="html" />HTML
+        </label>
+        <label> <input type="checkbox" name="skills[]" value="css" />CSS </label>
+        <label>
+          <input type="checkbox" name="skills[]" value="javascript" />Javascript
+        </label>
+      </fieldset>
+      <br /><br />
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" />
+      <br /><br />
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

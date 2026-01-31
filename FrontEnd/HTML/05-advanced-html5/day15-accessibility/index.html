@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day15 Accessibility (A11Y)</title>
+  </head>
+  <body>
+    <h1>FAQ Section</h1>
+    <details>
+      <summary>What is HTML?</summary>
+      <p>HTML stands for HyperText Markup Language.</p>
+    </details>
+    <details>
+      <summary>What is CSS?</summary>
+      <p>CSS stands for Cascading Style Sheets.</p>
+    </details>
+    <details>
+      <summary>What is JavaScript?</summary>
+      <p>JavaScript is a programming language for the web.</p>
+    </details>
+
+    <h2>Status Dashboard</h2>
+
+    <!-- Progress -->
+    <label for="projectCompletion">Project Completion:</label>
+    <progress id="projectCompletion" value="70" max="100">70%</progress>
+
+    <br /><br />
+
+    <!-- Meter -->
+    <label for="serverLoad">Server Load:</label>
+    <meter
+      id="serverLoad"
+      value="90"
+      min="0"
+      max="100"
+      low="20"
+      high="80"
+      optimum="50"
+    >
+      90%
+    </meter>
+
+    <h2>Technical Note</h2>
+    <pre><code>
+        /* Highlighting selector */
+        <mark>h1</mark> {
+        color: blue;
+        }
+    </code></pre>
+
+    <h2>Inline SVG</h2>
+    <svg role="img" aria-labelledby="svgTitle">
+      <title id="svgTitle">A simple blue circle</title>
+      <circle cx="50" cy="50" r="40" fill="blue" />
+    </svg>
+  </body>
+</html>

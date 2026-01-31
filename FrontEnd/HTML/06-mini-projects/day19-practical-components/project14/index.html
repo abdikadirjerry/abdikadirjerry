@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form action="submit">
+      <label for="fullname">Fullname</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        placeholder="enter your fullname"
+        required
+      />
+      <br /><br />
+
+      <section>
+        <p>what is your current level</p>
+        <label>
+          <input type="radio" name="level" value="beginner" />Beginner </label
+        ><br />
+        <label>
+          <input
+            type="radio"
+            name="level"
+            value="intermediate"
+          />Intermediate </label
+        ><br />
+        <label>
+          <input type="radio" name="level" value="advanced" />Advanced
+        </label>
+      </section>
+      <br />
+
+      <section>
+        <p>Which technologies are you learning?</p>
+        <label>
+          <input type="checkbox" name="skills" value="html" />HTML
+        </label>
+        <br />
+        <label> <input type="checkbox" name="skills" value="css" />CSS </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="javascript" />JavaScript
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="react" />React.js
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="node" />Node.js
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="express" />Express.js
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" id="mongodb" />MongoDB
+        </label>
+      </section>
+      <br />
+
+      <section>
+        <label for="study-time">How many hours do you study per day?</label
+        ><br />
+        <select name="study-time" id="study-time">
+          <option value="">Select</option>
+          <option value="1">1 hour</option>
+          <option value="1-2">1-2 hours</option>
+          <option value="3-4">3-4 hours</option>
+          <option value="5+">5+ hours</option>
+        </select>
+      </section>
+      <button type="submit">Submit Survey</button>
+    </form>
+  </body>
+</html>

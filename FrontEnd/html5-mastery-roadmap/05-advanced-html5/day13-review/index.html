@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13 Review</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <caption>My Skills</caption>
+            <thead>
+            <tr>
+                <th>Content</th>
+                <th>Status</th>
+                <th>Days</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Git</td>
+                <td>Completed</td>
+                <td>10 Days</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Inprogress</td>
+                <td>20 Days</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Not started</td>
+                <td>30 Days</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="2">Total</td>
+                <td>60 Days</td>
+            </tfoot>
+        </table>
+
+        <form action="submit">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="firstname">First name</label>
+                <input type="text" name="firstname" id="firstname" minlength="4" maxlength="10" placeholder="enter your first name" required>
+                <br><br>
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" id="lastname" minlength="4" maxlength="10" placeholder="enter your last name">
+                <br><br>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="enter your age">
+                <br><br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Address</legend>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="enter your email">
+                <br><br>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{9}" placeholder="enter your phone number">
+                <br><br>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" minlength="3" maxlength="15">
+                <br><br>
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value="select">Select</option>
+                    <option value="somaliland">Somaliland</option>
+                    <option value="usa">United states</option>
+                    <option value="ksa">Saudi arabia</option>
+                    <option value="uae">United arab emirates</option>
+                    <option value="canada">Canada</option>
+                    <option value="qatar">Qatar</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="uk">United kingdom</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Courses</legend>
+                <label for="Frontend">
+                    <input type="checkbox">Frontend
+                </label>
+                <label for="backend">
+                    <input type="checkbox">Backend
+                </label>
+                <label for="Frontend">
+                    <input type="checkbox">Fullstack
+                </label>
+                <label for="Frontend">
+                    <input type="checkbox">Mobile App
+                </label>
+                <label for="Frontend">
+                    <input type="checkbox">DevOps
+                </label>
+            </fieldset>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+        &copy;2026 Abdikadir Jerry
+    </footer>
+</body>
+</html>
