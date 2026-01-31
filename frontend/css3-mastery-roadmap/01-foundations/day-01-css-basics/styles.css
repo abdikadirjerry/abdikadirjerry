@@ -1,0 +1,36 @@
+/* Reset default browser spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the profile vertically and horizontally */
+.profile-container {
+  height: 100vh;              /* vh used */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+/* Name styling */
+.name {
+  font-size: 2.5rem;          /* rem used */
+  margin-bottom: 0.5rem;
+}
+
+/* Role text */
+.role {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Description width uses percentage */
+.description {
+  width: 60%;                 /* % used */
+  font-size: 1rem;
+  line-height: 1.6;
+}
