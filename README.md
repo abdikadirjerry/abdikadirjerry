@@ -21,7 +21,8 @@ Each project represents a learning milestone and focuses on **real-world use cas
 ## 🗂️ Project Structure
 
 📁 frontend/
-├── html-css-projects/
+├── html-projects/
+├── css-projects/
 ├── javascript-projects/
 ├── react-projects/
 ├── nextjs-projects/
