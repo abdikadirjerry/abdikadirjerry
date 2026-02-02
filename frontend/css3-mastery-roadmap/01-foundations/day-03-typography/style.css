@@ -1,0 +1,45 @@
+/* Base typography using a clean font stack */
+body {
+  margin: 0;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: 1rem; /* rem used everywhere */
+  line-height: 1.7; /* proper line-height for reading */
+  background-color: #f9fafb;
+  color: #1f2933;
+}
+
+/* Blog container */
+.blog {
+  max-width: 65ch; /* limit text width using ch */
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Title with ellipsis */
+.blog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* ellipsis for long titles */
+}
+
+/* Meta info */
+.blog-meta {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  color: #6b7280;
+}
+
+/* Article text */
+.blog-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
