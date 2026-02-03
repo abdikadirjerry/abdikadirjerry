@@ -1,0 +1,64 @@
+/* Base reset */
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #0f172a;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Navigation list */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+/* Underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.15rem;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
