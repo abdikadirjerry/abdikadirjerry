@@ -1,0 +1,37 @@
+/* problem */
+.card {
+  width: 300;
+  padding: 20px;
+  background: #e5e7eb;
+}
+
+/* fixed */
+.card {
+  width: 18.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* problem */
+.title {
+  font-size: 24;
+  margin-bottom: 1;
+}
+
+/* fixed */
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* problem */
+.text {
+  color: 111827;
+  line-height: 1, 6;
+}
+
+/* fixed */
+.text {
+  color: #111827;
+  line-height: 1.6;
+}
