@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: auto;
+    margin: auto;
+    font-family: system-ui, sans-serif;
+    background-color: #f9fafb;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    width: 12rem;
+    padding: 1.5rem;
+    background-color: #e5e7eb;
+    border: 0.5rem solid #cbd5e1;
+}
+
+.scroll-box {
+    width: 20rem;
+  height: 8rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  overflow-y: auto;
+  background-color: #f1f5f9;
+  border: 0.2rem solid #94a3b8;
+}
+
+.layout {
+  display: flex;
+  max-width: 40rem;
+  border: 0.2rem solid #64748b;
+}
+
+.sidebar {
+  width: 10rem;
+  padding: 1rem;
+  background-color: #c7d2fe;
+}
+
+.content {
+  width: 30rem;
+  padding: 2rem;
+  background-color: #e0e7ff;
+}
