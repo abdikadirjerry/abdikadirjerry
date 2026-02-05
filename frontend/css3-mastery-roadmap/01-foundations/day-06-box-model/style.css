@@ -1,29 +1,36 @@
+/* Global reset for predictable box model */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: auto;
-    margin: auto;
-    font-family: system-ui, sans-serif;
-    background-color: #f9fafb;
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafb;
 }
 
+/* -------------------- */
+/* Cards */
+/* -------------------- */
 .cards {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .card {
-    width: 12rem;
-    padding: 1.5rem;
-    background-color: #e5e7eb;
-    border: 0.5rem solid #cbd5e1;
+  width: 12rem;
+  padding: 1.5rem;
+  background-color: #e5e7eb;
+  border: 0.2rem solid #cbd5e1;
 }
 
+/* -------------------- */
+/* Scrollable div */
+/* -------------------- */
 .scroll-box {
-    width: 20rem;
+  width: 20rem;
   height: 8rem;
   padding: 1rem;
   margin-bottom: 3rem;
@@ -32,6 +39,9 @@ body {
   border: 0.2rem solid #94a3b8;
 }
 
+/* -------------------- */
+/* Layout where padding + width matter */
+/* -------------------- */
 .layout {
   display: flex;
   max-width: 40rem;
