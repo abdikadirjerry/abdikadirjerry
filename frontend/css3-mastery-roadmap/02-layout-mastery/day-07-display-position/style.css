@@ -50,3 +50,15 @@ body {
   font-size: 0.8rem;
   border-radius: 0.3rem;
 }
+
+.chat-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  padding: 1rem 1.2rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
