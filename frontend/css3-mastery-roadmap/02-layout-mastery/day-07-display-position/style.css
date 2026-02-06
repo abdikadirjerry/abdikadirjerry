@@ -25,3 +25,28 @@ body {
   text-decoration: none;
   border-radius: 0.3rem;
 }
+
+.card1 {
+  position: relative;   /* anchor point */
+  width: 15rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.image {
+  height: 8rem;
+  background-color: #e5e7eb;
+}
+
+.badge {
+  position: absolute;   /* removed from flow */
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #ef4444;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+}
