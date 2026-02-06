@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aeaeae;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+  margin: 2rem;
+}
+
+.btn {
+  display: inline-block;     
+  width: 6rem;
+  height: 2.5rem;
+  line-height: 2.5rem;       
+  text-align: center;
+  margin-right: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}
