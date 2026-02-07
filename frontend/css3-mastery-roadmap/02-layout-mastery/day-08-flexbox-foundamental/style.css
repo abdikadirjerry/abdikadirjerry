@@ -10,6 +10,38 @@ body {
   background-color: #fff;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-color: #0099ff;
+  margin: 1rem;
+  padding: 0.7rem;
+  width: 80px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.7rem;
+}
+
+li {
+  list-style: none;
+}
 .container {
   display: flex;
   flex-direction: column;
