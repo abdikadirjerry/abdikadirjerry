@@ -10,6 +10,7 @@ body {
   background-color: #fff;
 }
 
+/* ==== Challenge 2 Navbar Layout ==== */
 .navigation {
   display: flex;
   flex-direction: row;
@@ -45,6 +46,7 @@ li {
   list-style: none;
 }
 
+/* ==== Challenge 1 Perfect Centering ==== */
 .container {
   display: flex;
   flex-direction: column;
@@ -67,6 +69,7 @@ li {
   align-content: center;
 }
 
+/* ==== Challenge 3 Responsive Card Row ==== */
 .cards {
   display: flex;
   flex-direction: row;
@@ -86,6 +89,7 @@ li {
   color: #fff;
 }
 
+/* ==== Challenge 4 Sidebar Layout ==== */
 .layout {
   display: flex;
   min-height: 100vh;
@@ -99,10 +103,11 @@ li {
 }
 
 .main {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
+/* ==== Challenge 5 Card Footer Alignment ==== */
 .cards1 {
   display: flex;
   gap: 20px;
@@ -118,4 +123,36 @@ li {
 
 .card1 button {
   margin-top: auto;
+}
+
+/* ==== Challenge 6 Holy Grail Layout ==== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  text-align: center;
+}
+
+.content aside {
+  width: 200px;
+  background: #ddd;
+  padding: 20px;
+}
+
+.content main {
+  flex: 1;
+  padding: 20px;
 }
