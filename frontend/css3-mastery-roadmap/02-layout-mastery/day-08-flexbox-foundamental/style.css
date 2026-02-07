@@ -15,6 +15,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
+  background-color: #fff;
 }
 
 .logo {
@@ -42,13 +44,14 @@ body {
 li {
   list-style: none;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #c1b7b7;
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
 }
 
@@ -62,4 +65,23 @@ li {
   border-radius: 10px;
   text-align: center;
   align-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #cfcfcf;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  flex: 1 1 200px;
+  padding: 1rem;
+  background-color: #0099ff;
+  text-align: center;
+  flex-wrap: nowrap;
+  color: #fff;
 }
