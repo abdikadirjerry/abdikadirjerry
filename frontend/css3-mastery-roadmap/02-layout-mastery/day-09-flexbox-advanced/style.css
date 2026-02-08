@@ -68,7 +68,6 @@
   flex-direction: column;
 }
 
-
 footer {
   margin-top: auto;
 }
@@ -114,4 +113,15 @@ footer {
 
 .message.received {
   align-self: flex-start;
+}
+
+/* challenge5 */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 0 0 calc(25% - 15px);
 }
