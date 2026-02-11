@@ -1,0 +1,13 @@
+/* challenge1 */
+.nav {
+  display: flex;
+  background: lightblue;
+  padding: 10px;
+}
+
+.nav div {
+  margin-right: 20px;
+  padding: 10px;
+  background: white;
+}
+
