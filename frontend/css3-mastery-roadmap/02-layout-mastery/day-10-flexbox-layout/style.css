@@ -20,3 +20,16 @@
   background: lightgray;
 }
 
+/* challenge3 */
+.container {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  margin: 5px;
+  background: orange;
+  text-align: center;
+}
+
