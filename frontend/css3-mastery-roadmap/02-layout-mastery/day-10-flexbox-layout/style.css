@@ -33,3 +33,15 @@
   text-align: center;
 }
 
+/* challenge4 */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.menu button {
+  margin: 5px;
+  padding: 10px;
+}
+
