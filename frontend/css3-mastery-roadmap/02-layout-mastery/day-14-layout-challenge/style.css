@@ -1,0 +1,185 @@
+/* ===== Global Styles ===== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.challenge {
+  margin: 50px 0;
+  padding: 20px;
+  border: 2px solid #ddd;
+}
+
+/* ================= FLEX ================= */
+
+/* FLEX 1: Center Box */
+.flex1 {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 200px;
+}
+
+.flex1 .box {
+  background: teal;
+  color: white;
+  padding: 40px;
+}
+
+/* FLEX 2: Navbar */
+.flex2 .navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+
+.flex2 .links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* FLEX 3: Card Row */
+.flex3 {
+  display: flex;
+  gap: 20px;
+}
+
+.flex3 .card {
+  background: coral;
+  padding: 30px;
+  flex: 1;
+  text-align: center;
+}
+
+
+/* ================= GRID ================= */
+
+/* GRID 1: Simple 3 columns */
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid1 div {
+  background: lightblue;
+  padding: 40px;
+  text-align: center;
+}
+
+/* GRID 2: Sidebar Layout */
+.grid2 {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+}
+
+.grid2 header { grid-area: header; background: #444; color: white; padding: 20px; }
+.grid2 aside { grid-area: aside; background: #ccc; padding: 20px; }
+.grid2 main { grid-area: main; background: #eee; padding: 20px; }
+.grid2 footer { grid-area: footer; background: #222; color: white; padding: 20px; }
+
+/* GRID 3: Responsive Auto Fit */
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.grid3 .gcard {
+  background: purple;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+
+/* ================= HYBRID ================= */
+
+/* HYBRID 1 */
+.hybrid1 .hybrid-nav {
+  display: flex;
+  justify-content: space-between;
+  background: darkblue;
+  color: white;
+  padding: 15px;
+}
+
+.hybrid1 .hybrid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.hybrid1 .hybrid-grid div {
+  background: lightgreen;
+  padding: 30px;
+  text-align: center;
+}
+
+/* HYBRID 2 Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.dashboard aside {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area .top {
+  background: #999;
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.cards div {
+  background: #f4a261;
+  padding: 30px;
+  text-align: center;
+}
+
+/* HYBRID 3 Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  background: gray;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.info button {
+  margin-top: 10px;
+  padding: 8px 15px;
+}
