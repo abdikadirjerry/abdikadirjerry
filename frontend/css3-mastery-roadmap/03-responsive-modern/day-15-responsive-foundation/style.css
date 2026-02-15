@@ -1,0 +1,143 @@
+/* =====================
+   Global Reset
+===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* =====================
+   Container
+   Keeps content centered
+===================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =====================
+   Navbar
+===================== */
+
+.header {
+  background: #222;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column; /* Mobile first */
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+/* =====================
+   Hero Section
+===================== */
+
+.hero {
+  padding: 60px 0;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #6200ea;
+  color: white;
+  cursor: pointer;
+}
+
+/* =====================
+   Cards Section
+===================== */
+
+.cards-section {
+  padding: 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile first */
+  gap: 20px;
+}
+
+.card {
+  background: #e3e3e3;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* =====================
+   Footer
+===================== */
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* =====================
+   Tablet (768px+)
+===================== */
+
+@media (min-width: 768px) {
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .nav-links a {
+    margin-left: 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================
+   Desktop (1024px+)
+===================== */
+
+@media (min-width: 1024px) {
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 100px 0;
+  }
+}
