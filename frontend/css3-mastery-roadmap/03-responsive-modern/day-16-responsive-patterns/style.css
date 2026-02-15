@@ -1,0 +1,152 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== Navbar ===== */
+.header {
+  background: #222;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-links {
+  display: none; /* hidden on mobile */
+  flex-direction: column;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show menu when active */
+.show {
+  display: flex;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background: #f4f4f4;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #6200ea;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Grid Pattern ===== */
+.section {
+  padding: 60px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #ddd;
+  padding: 30px;
+  text-align: center;
+}
+
+/* ===== Media Object Pattern ===== */
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.media-img {
+  background: #999;
+  height: 150px;
+}
+
+.media-content {
+  flex: 1;
+}
+
+/* ===== CTA Pattern ===== */
+.cta {
+  background: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* ===== Tablet ===== */
+@media (min-width: 768px) {
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .media {
+    flex-direction: row;
+  }
+
+  .media-img {
+    width: 200px;
+  }
+}
+
+/* ===== Desktop ===== */
+@media (min-width: 1024px) {
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero {
+    padding: 100px 0;
+  }
+}
