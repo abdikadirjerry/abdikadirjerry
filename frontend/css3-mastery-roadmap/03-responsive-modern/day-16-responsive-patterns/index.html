@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Patterns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">MyBrand</div>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <h1>Responsive Layout Patterns</h1>
+      <p>Reusable layout structures for real projects.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+
+  <!-- ================= GRID CARDS ================= -->
+  <section class="section">
+    <div class="container grid">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+    </div>
+  </section>
+
+
+  <!-- ================= MEDIA OBJECT ================= -->
+  <section class="section">
+    <div class="container media">
+      <div class="media-img"></div>
+      <div class="media-content">
+        <h3>Media Object Pattern</h3>
+        <p>This layout is commonly used in blog posts and profile sections.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Build Responsive Websites?</h2>
+      <button>Get Started</button>
+    </div>
+  </section>
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
