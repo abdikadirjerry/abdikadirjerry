@@ -96,3 +96,36 @@ body {
   }
 }
 
+
+/* ===================================== */
+/* CHALLENGE 3 — Hero Split */
+/* ===================================== */
+
+.hero {
+  padding: 80px 0;
+  background: #f4f4f4;
+}
+
+.hero-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-image {
+  height: 250px;
+  background: #ccc;
+}
+
+@media (min-width: 768px) {
+  .hero-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: 50%;
+    height: 300px;
+  }
+}
+
