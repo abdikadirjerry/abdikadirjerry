@@ -129,3 +129,44 @@ body {
   }
 }
 
+
+/* ===================================== */
+/* CHALLENGE 4 — Dashboard */
+/* ===================================== */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.dashboard aside {
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+.dashboard main {
+  padding: 20px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.dashboard-cards div {
+  background: #ddd;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .dashboard {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
