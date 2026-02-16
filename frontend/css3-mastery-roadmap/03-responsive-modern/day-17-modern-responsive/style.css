@@ -170,3 +170,30 @@ body {
   }
 }
 
+
+/* ===================================== */
+/* CHALLENGE 5 — Media Object */
+/* ===================================== */
+
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.media-image {
+  height: 200px;
+  background: #bbb;
+}
+
+@media (min-width: 768px) {
+  .media {
+    flex-direction: row;
+  }
+
+  .media-image {
+    width: 300px;
+  }
+}
+
+
