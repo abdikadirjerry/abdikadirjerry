@@ -197,3 +197,24 @@ body {
 }
 
 
+/* ===================================== */
+/* CHALLENGE 6 — Footer */
+/* ===================================== */
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
