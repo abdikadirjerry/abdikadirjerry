@@ -32,3 +32,29 @@
   transform: translateY(-10px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
+
+/* ========================= */
+/* Challenge 3: Nav Underline */
+/* ========================= */
+
+.challenge-3 nav a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.challenge-3 nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #3498db;
+  transition: 0.3s;
+}
+
+.challenge-3 nav a:hover::after {
+  width: 100%;
+}
