@@ -15,3 +15,20 @@
   background: #2ecc71;
   transform: scale(1.1);
 }
+
+/* ========================= */
+/* Challenge 2: Card Lift */
+/* ========================= */
+
+.challenge-2 .card {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+}
+
+.challenge-2 .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
