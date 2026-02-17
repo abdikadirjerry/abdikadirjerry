@@ -58,3 +58,22 @@
 .challenge-3 nav a:hover::after {
   width: 100%;
 }
+
+/* ========================= */
+/* Challenge 4: Fade In */
+/* ========================= */
+
+.challenge-4 .fade-box {
+  width: 200px;
+  padding: 20px;
+  background: #e74c3c;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
