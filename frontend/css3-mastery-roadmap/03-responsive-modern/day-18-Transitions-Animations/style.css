@@ -96,3 +96,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* ========================= */
+/* Challenge 6: Slide In */
+/* ========================= */
+
+.challenge-6 .slide-box {
+  width: 200px;
+  padding: 20px;
+  background: #2ecc71;
+  color: white;
+  transform: translateX(-100%);
+  animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
