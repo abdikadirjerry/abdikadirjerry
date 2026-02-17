@@ -1,0 +1,17 @@
+/* ========================= */
+/* Challenge 1: Hover Button */
+/* ========================= */
+
+.challenge-1 .btn-hover {
+  padding: 12px 25px;
+  border: none;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.challenge-1 .btn-hover:hover {
+  background: #2ecc71;
+  transform: scale(1.1);
+}
