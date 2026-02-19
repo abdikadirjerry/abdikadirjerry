@@ -22,10 +22,7 @@ body {
   min-height: 100vh;
 
   /* Advanced gradient */
-  background: radial-gradient(circle at top left,
-              #6366f1,
-              #9333ea,
-              #0f172a);
+  background: radial-gradient(circle at top left, #6366f1, #9333ea, #0f172a);
 
   padding: 2rem 6%;
   position: relative;
@@ -91,7 +88,7 @@ body {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: white;
 }
 
@@ -133,7 +130,7 @@ body {
   color: white;
   font-weight: bold;
 
-  box-shadow: 0 10px 30px rgba(99,102,241,0.6);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.6);
 
   transition: transform 0.25s;
 }
@@ -145,7 +142,7 @@ body {
 .btn-secondary {
   padding: 0.9rem 1.8rem;
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
   color: white;
 }
@@ -159,12 +156,11 @@ body {
   padding: 2rem;
   border-radius: 20px;
 
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
-  box-shadow:
-    0 8px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 
   animation: float 4s ease-in-out infinite;
 }
@@ -172,8 +168,13 @@ body {
 /* Floating animation */
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-18px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
 }
 
 /* =========================
