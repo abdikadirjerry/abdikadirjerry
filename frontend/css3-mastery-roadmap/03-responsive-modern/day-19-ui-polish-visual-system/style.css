@@ -1,0 +1,192 @@
+/* =========================
+   RESET & BASE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* =========================
+   HERO BACKGROUND
+========================= */
+
+.hero {
+  min-height: 100vh;
+
+  /* Advanced gradient */
+  background: radial-gradient(circle at top left,
+              #6366f1,
+              #9333ea,
+              #0f172a);
+
+  padding: 2rem 6%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating gradient blobs */
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+}
+
+.hero::before {
+  width: 400px;
+  height: 400px;
+  background: #60a5fa;
+  top: -100px;
+  left: -100px;
+}
+
+.hero::after {
+  width: 500px;
+  height: 500px;
+  background: #f472b6;
+  bottom: -150px;
+  right: -150px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.btn-outline {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  padding: 0.9rem 1.8rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: white;
+  font-weight: bold;
+
+  box-shadow: 0 10px 30px rgba(99,102,241,0.6);
+
+  transition: transform 0.25s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+}
+
+.btn-secondary {
+  padding: 0.9rem 1.8rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: transparent;
+  color: white;
+}
+
+/* =========================
+   GLASSMORPHISM CARD
+========================= */
+
+.glass-card {
+  width: 260px;
+  padding: 2rem;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow:
+    0 8px 40px rgba(0,0,0,0.4);
+
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
