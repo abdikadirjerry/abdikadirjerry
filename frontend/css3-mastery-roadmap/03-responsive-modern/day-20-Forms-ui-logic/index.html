@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Form UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="contact">
+
+    <form class="form" action="#success">
+
+      <h2>Contact Us</h2>
+
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required />
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="field">
+        <label>Message</label>
+        <textarea rows="4" placeholder="Your message"></textarea>
+      </div>
+
+      <!-- Custom checkbox -->
+      <label class="checkbox">
+        <input type="checkbox" required />
+        <span class="checkmark"></span>
+        Subscribe to newsletter
+      </label>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+    <!-- CSS-only success state -->
+    <div id="success" class="success-box">
+      ✅ Message sent successfully!
+    </div>
+
+  </section>
+
+</body>
+</html>
