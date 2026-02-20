@@ -1,0 +1,160 @@
+/* =========================
+   BASE
+========================= */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form card */
+
+.form {
+  width: 340px;
+  padding: 2rem;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+
+.field {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.3);
+  color: white;
+  outline: none;
+
+  transition: 0.2s;
+}
+
+/* Hover state */
+
+input:hover,
+textarea:hover {
+  border-color: #60a5fa;
+}
+
+/* Focus-visible state */
+
+input:focus-visible,
+textarea:focus-visible {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 2px rgba(167,139,250,0.5);
+}
+
+/* =========================
+   CUSTOM CHECKBOX
+========================= */
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+/* Checked state */
+
+.checkbox input:checked + .checkmark {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+/* =========================
+   BUTTON STATES
+========================= */
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: white;
+
+  transition: transform 0.2s;
+}
+
+/* Hover */
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Disabled */
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* =========================
+   SUCCESS STATE (:target)
+========================= */
+
+.success-box {
+  display: none;
+  margin-top: 1rem;
+  text-align: center;
+  color: #4ade80;
+}
+
+#success:target {
+  display: block;
+}
