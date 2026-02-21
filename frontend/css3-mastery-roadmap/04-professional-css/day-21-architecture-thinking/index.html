@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BEM Architecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">My Product</h1>
+
+      <nav class="nav">
+        <a class="nav__link nav__link--active" href="#">Home</a>
+        <a class="nav__link" href="#">Features</a>
+        <a class="nav__link" href="#">Pricing</a>
+        <a class="nav__link" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="hero">
+        <h2 class="hero__title">Build Scalable CSS</h2>
+        <p class="hero__text">
+          This page demonstrates clean architecture using BEM naming.
+        </p>
+        <button class="button button--primary">Get Started</button>
+      </section>
+
+      <section class="card-list">
+        <article class="card">
+          <h3 class="card__title">Component CSS</h3>
+          <p class="card__text">Styles belong to components, not pages.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Low Specificity</h3>
+          <p class="card__text">Avoid deeply nested selectors.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Reusable UI</h3>
+          <p class="card__text">Components can be used anywhere.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
