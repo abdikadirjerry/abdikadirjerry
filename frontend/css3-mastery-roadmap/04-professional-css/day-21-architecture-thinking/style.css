@@ -1,0 +1,119 @@
+/* =========================
+   BASE
+========================= */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* =========================
+   HEADER COMPONENT
+========================= */
+
+.header {
+  padding: 1.5rem 6%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+}
+
+/* =========================
+   NAV COMPONENT
+========================= */
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+}
+
+.nav__link--active {
+  color: #6366f1;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout {
+  padding: 3rem 6%;
+}
+
+/* =========================
+   HERO COMPONENT
+========================= */
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero__title {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.hero__text {
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   BUTTON COMPONENT
+========================= */
+
+.button {
+  padding: 0.7rem 1.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button--primary {
+  background: #6366f1;
+  color: white;
+}
+
+/* =========================
+   CARD LIST COMPONENT
+========================= */
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card component */
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__text {
+  opacity: 0.75;
+}
