@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Theme Switch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hidden checkbox controls theme -->
+  <input type="checkbox" id="theme-toggle" />
+
+  <div class="app">
+
+    <header class="app__header">
+      <h1 class="app__title">My App</h1>
+
+      <label for="theme-toggle" class="toggle">
+        <span class="toggle__icon">🌙</span>
+        <span class="toggle__slider"></span>
+        <span class="toggle__icon">☀️</span>
+      </label>
+    </header>
+
+    <main class="app__content">
+
+      <div class="card">
+        <h2 class="card__title">Welcome</h2>
+        <p class="card__text">
+          This interface supports light and dark themes using only CSS variables.
+        </p>
+        <button class="button">Action</button>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
