@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accessible Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="header">
+      <h1>Accessible Contact</h1>
+    </header>
+
+    <main id="main">
+      <form class="form">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+  </body>
+</html>
