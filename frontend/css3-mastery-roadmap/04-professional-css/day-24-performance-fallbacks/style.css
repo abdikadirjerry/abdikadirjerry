@@ -1,0 +1,61 @@
+/* Base */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f8fafc;
+}
+
+.article {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+}
+
+/* Stable image prevents layout shift */
+
+.article__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Feature detection */
+
+@supports (backdrop-filter: blur(8px)) {
+  .article {
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Graceful fallback */
+/* If not supported, normal background remains */
+
+/* Print styles */
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .btn {
+    display: none; /* Hide non-essential UI */
+  }
+
+  .article {
+    box-shadow: none;
+    border: none;
+  }
+}
