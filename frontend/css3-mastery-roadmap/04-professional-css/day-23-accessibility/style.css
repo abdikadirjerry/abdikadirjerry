@@ -1,0 +1,77 @@
+/* High contrast base */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Skip link */
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Layout */
+
+.header {
+  padding: 1rem 2rem;
+  background: #111827;
+  color: white;
+}
+
+.form {
+  max-width: 420px;
+  margin: 2rem auto;
+}
+
+/* Fields */
+
+.field {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #6b7280;
+  border-radius: 6px;
+}
+
+/* Focus visible — important */
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Button */
+
+button {
+  padding: 0.7rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
