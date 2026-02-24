@@ -1,5 +1,4 @@
 /* Intentionally missing box-sizing */
-
 body {
   margin: 0;
   font-family: sans-serif;
@@ -15,7 +14,6 @@ body {
 }
 
 /* Cards */
-
 .card {
   background: #6366f1;
   color: white;
@@ -26,7 +24,6 @@ body {
 }
 
 /* Button overflow issue */
-
 .btn {
   width: 100%;
   padding: 15px;
@@ -36,7 +33,6 @@ body {
 }
 
 /* Overlay bug */
-
 .card--overlay {
   position: relative;
   top: -40px; /* Overlap issue */
