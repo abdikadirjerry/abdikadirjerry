@@ -1,0 +1,45 @@
+/* Intentionally missing box-sizing */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #e5e7eb;
+}
+
+.container {
+  width: 320px;
+  margin: 2rem auto;
+  background: white;
+  padding: 20px;
+  overflow: hidden; /* Causes clipping bug */
+}
+
+/* Cards */
+
+.card {
+  background: #6366f1;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Button overflow issue */
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #4338ca;
+  color: white;
+}
+
+/* Overlay bug */
+
+.card--overlay {
+  position: relative;
+  top: -40px; /* Overlap issue */
+  background: #f59e0b;
+  z-index: -1; /* Wrong stacking */
+}
