@@ -1,31 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Debugging Practice</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Debugging Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Debug This Layout</h1>
 
-  <section class="container">
+      <div class="card">
+        <h2>Broken Card</h2>
+        <p>
+          This card has layout issues that need debugging. Try inspecting with
+          DevTools.
+        </p>
+        <button class="btn">Click Me</button>
+      </div>
 
-    <h1>Debug This Layout</h1>
-
-    <div class="card">
-      <h2>Broken Card</h2>
-      <p>
-        This card has layout issues that need debugging.
-        Try inspecting with DevTools.
-      </p>
-      <button class="btn">Click Me</button>
-    </div>
-
-    <div class="card card--overlay">
-      <h2>Overlay Card</h2>
-      <p>This card overlaps incorrectly.</p>
-    </div>
-
-  </section>
-
-</body>
+      <div class="card card--overlay">
+        <h2>Overlay Card</h2>
+        <p>This card overlaps incorrectly.</p>
+      </div>
+    </section>
+  </body>
 </html>
