@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 6%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 6rem 6%;
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.hero__content {
+  max-width: 520px;
+}
+
+.hero__title {
+  font-size: 2.8rem;
+  margin-top: 0;
+}
+
+.hero__text {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #6366f1;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+}
