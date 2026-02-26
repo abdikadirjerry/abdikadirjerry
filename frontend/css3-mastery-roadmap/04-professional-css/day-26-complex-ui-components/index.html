@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Component Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="library">
+      <h1 class="library__title">Component Library</h1>
+
+      <!-- Modal Trigger -->
+      <section class="component">
+        <h2>Modal</h2>
+        <a href="#modal" class="btn">Open Modal</a>
+      </section>
+
+      <!-- Dropdown -->
+      <section class="component">
+        <h2>Dropdown</h2>
+        <div class="dropdown">
+          <button class="btn">Menu</button>
+          <ul class="dropdown__menu">
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Tooltip -->
+      <section class="component">
+        <h2>Tooltip</h2>
+        <button class="btn tooltip">
+          Hover me
+          <span class="tooltip__text">Helpful info</span>
+        </button>
+      </section>
+
+      <!-- Accordion -->
+      <section class="component">
+        <h2>Accordion</h2>
+
+        <details class="accordion">
+          <summary>What is this?</summary>
+          <p>A CSS-only accordion using native HTML.</p>
+        </details>
+
+        <details class="accordion">
+          <summary>Why use it?</summary>
+          <p>Accessible and requires no JavaScript.</p>
+        </details>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal__box">
+        <h2>Modal Title</h2>
+        <p>This modal is controlled using CSS :target.</p>
+        <a href="#" class="btn">Close</a>
+      </div>
+    </div>
+  </body>
+</html>
