@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header class="nav">
+  <h2>Jerry</h2>
+  <button id="mode">🌙</button>
+</header>
+
+<section class="about">
+  <h1>Frontend Developer</h1>
+  <p>I build clean responsive websites.</p>
+</section>
+
+<section class="projects">
+  <div class="project">Project 1</div>
+  <div class="project">Project 2</div>
+  <div class="project">Project 3</div>
+</section>
+
+<script>
+  document.getElementById("mode").onclick = () => {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>
