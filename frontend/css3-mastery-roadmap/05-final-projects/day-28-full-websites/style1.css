@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: white;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #0ea5e9;
+  color: white;
+}
+
+.about {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.project {
+  background: #e2e8f0;
+  padding: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.dark .project {
+  background: #1e293b;
+}
+
+@media(max-width:768px){
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
