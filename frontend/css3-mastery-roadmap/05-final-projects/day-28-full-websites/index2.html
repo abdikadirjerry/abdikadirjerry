@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2>SmartWatch</h2>
+      <button id="darkBtn">🌙</button>
+    </header>
+
+    <section class="hero">
+      <h1>Next Generation Smart Watch</h1>
+      <p>Track your health & stay connected.</p>
+      <button>Buy Now</button>
+    </section>
+
+    <section class="features">
+      <div>Heart Rate Monitor</div>
+      <div>Water Resistant</div>
+      <div>Long Battery</div>
+    </section>
+
+    <script>
+      document.getElementById("darkBtn").onclick = () => {
+        document.body.classList.toggle("dark");
+      };
+    </script>
+  </body>
+</html>
