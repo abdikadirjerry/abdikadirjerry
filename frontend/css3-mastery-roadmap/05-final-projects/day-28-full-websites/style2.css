@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f8fafc;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #0f172a;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #14b8a6;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  animation: slide 1s ease;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #14b8a6;
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.features div {
+  background: white;
+  padding: 40px;
+  transition: 0.3s;
+}
+
+.features div:hover {
+  transform: translateY(-10px);
+}
+
+.dark .features div {
+  background: #1e293b;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
