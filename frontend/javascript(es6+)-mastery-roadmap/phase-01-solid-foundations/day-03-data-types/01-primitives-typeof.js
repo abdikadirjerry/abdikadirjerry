@@ -1,6 +1,6 @@
-// ==============================
-// Day 3 — Primitives & typeof
-// ==============================
+// ============================================
+// 01-primitives-typeof.js
+// ============================================
 
 // ===============================
 // 🟢 Easy (1–10)
@@ -46,3 +46,41 @@ console.log(typeof notANumber);
 let stringTrue = "true";
 console.log(typeof stringTrue);
 
+
+// ===============================
+// 🟡 Intermediate (11–18)
+// ===============================
+
+// 11
+let num = 50;
+console.log(typeof num);
+num = String(num);
+console.log(typeof num);
+
+// 12
+let strNum = "100";
+console.log(typeof strNum);
+
+// 13
+let inf = Infinity;
+console.log(typeof inf);
+
+// 14
+let negInf = -Infinity;
+console.log(typeof negInf);
+
+// 15
+console.log(typeof null);
+console.log(typeof undefined);
+
+// 16
+let space = " ";
+console.log(typeof space);
+
+// 17
+let boolFalse = false;
+console.log(typeof boolFalse);
+
+// 18
+let big = BigInt(10);
+console.log(typeof big);
