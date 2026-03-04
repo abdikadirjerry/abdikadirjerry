@@ -65,3 +65,34 @@ console.log(null == 0);
 // 15
 console.log(undefined == 0);
 
+// ===============================
+// 🔴 Advanced (16–22)
+// ===============================
+
+// 16
+console.log(null >= 0);
+
+// 17
+console.log(undefined >= 0);
+
+// 18
+let manualUndefined = undefined;
+
+// 19
+let intentionalNull = null; // used when we want to clear a value intentionally
+
+// 20
+let u1;
+let u2;
+console.log(u1 === u2);
+
+// 21
+let n1 = null;
+let u3;
+console.log(n1 == u3);
+
+// 22
+let testVar = null;
+console.log(testVar);
+testVar = undefined;
+console.log(testVar);
