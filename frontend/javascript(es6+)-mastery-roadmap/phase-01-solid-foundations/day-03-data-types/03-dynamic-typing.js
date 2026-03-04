@@ -29,3 +29,23 @@ d = 100;
 
 let e = false;
 e = "false";
+
+// ===============================
+// 🟡 Intermediate (9–15)
+// ===============================
+
+let multi = 5;
+multi = "five";
+multi = true;
+multi = null;
+
+let numStr = 20;
+numStr = String(numStr);
+
+let strToNum = "30";
+strToNum = Number(strToNum);
+
+console.log(Number(true));
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean("false"));
