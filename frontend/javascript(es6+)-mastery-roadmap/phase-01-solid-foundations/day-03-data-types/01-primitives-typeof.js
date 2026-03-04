@@ -46,7 +46,6 @@ console.log(typeof notANumber);
 let stringTrue = "true";
 console.log(typeof stringTrue);
 
-
 // ===============================
 // 🟡 Intermediate (11–18)
 // ===============================
@@ -84,3 +83,42 @@ console.log(typeof boolFalse);
 // 18
 let big = BigInt(10);
 console.log(typeof big);
+
+// ===============================
+// 🔴 Advanced (19–25)
+// ===============================
+
+// 19
+let v1 = 1;
+let v2 = "JS";
+let v3 = true;
+let v4 = null;
+let v5 = undefined;
+console.log(typeof v1, typeof v2, typeof v3, typeof v4, typeof v5);
+
+// 20
+let dynamic = 10;
+console.log(typeof dynamic);
+dynamic = "ten";
+console.log(typeof dynamic);
+dynamic = true;
+console.log(typeof dynamic);
+dynamic = undefined;
+console.log(typeof dynamic);
+
+// 21
+let weird = 0 / 0;
+console.log(weird, typeof weird);
+
+// 22
+console.log(typeof (true + ""));
+
+// 23
+console.log(typeof ("5" - 2));
+
+// 24
+console.log(typeof ("5" + 2));
+
+// 25
+let doubleType = typeof typeof 5;
+console.log(doubleType);
