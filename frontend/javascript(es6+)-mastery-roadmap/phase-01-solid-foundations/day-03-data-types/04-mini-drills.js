@@ -30,3 +30,19 @@ console.log(Boolean(null));
 console.log(Boolean("true"));
 console.log(Boolean(0));
 console.log(typeof ("5" * 2));
+
+// ===============================
+// 🔴 Advanced (13–18)
+// ===============================
+
+let crazy = 1;
+crazy = "1";
+crazy = true;
+crazy = null;
+crazy = undefined;
+
+console.log(typeof (5 + "5"));
+console.log(typeof (5 - "5"));
+console.log(null == false);
+console.log(undefined == false);
+console.log(typeof typeof null);
