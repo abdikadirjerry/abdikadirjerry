@@ -2,43 +2,47 @@
 // Day 3 — Primitives & typeof
 // ==============================
 
-// EASY (1-10)
+// ===============================
+// 🟢 Easy (1–10)
+// ===============================
 
-//Challenge 1
+// 1
 let age = 25;
 console.log(typeof age);
 
-// challenge 2
+// 2
 let name = "Jerry";
 console.log(typeof name);
 
-// challenge 3
+// 3
 let isStudent = true;
 console.log(typeof isStudent);
 
-// challenge 4
-let number = 7;
-console.log(typeof number);
+// 4
+let decimal = 3.14;
+console.log(typeof decimal);
 
-// challenge 5
-let empty = "";
-console.log(typeof empty);
+// 5
+let emptyString = "";
+console.log(typeof emptyString);
 
-// challenge 6
+// 6
 let zero = 0;
 console.log(typeof zero);
 
-// challenge 7
-let withOutAssign;
-console.log(typeof withOutAssign);
+// 7
+let notAssigned;
+console.log(typeof notAssigned);
 
-// challenge 8
-let nul = null;
-console.log(typeof nul);
+// 8
+let nothing = null;
+console.log(typeof nothing); // historical JS bug → object
 
-// challenge 9
+// 9
 let notANumber = NaN;
 console.log(typeof notANumber);
 
-// challenge 10
-let isOnline = "true";
+// 10
+let stringTrue = "true";
+console.log(typeof stringTrue);
+
