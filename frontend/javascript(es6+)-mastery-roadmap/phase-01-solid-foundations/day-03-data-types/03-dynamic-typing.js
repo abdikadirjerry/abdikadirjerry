@@ -49,3 +49,21 @@ console.log(Number(true));
 console.log(Boolean(0));
 console.log(Boolean(""));
 console.log(Boolean("false"));
+
+// ===============================
+// 🔴 Advanced (16–22)
+// ===============================
+
+let tracker = 5;
+console.log(typeof tracker);
+tracker = "5";
+console.log(typeof tracker);
+tracker = false;
+console.log(typeof tracker);
+
+console.log(Number("25") + 5);
+console.log(Number("25px"));
+console.log(Number(null));
+console.log(Number(undefined));
+console.log(Boolean(NaN));
+console.log(String(0) + 5);
