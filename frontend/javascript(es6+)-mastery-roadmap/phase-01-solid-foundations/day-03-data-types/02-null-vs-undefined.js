@@ -33,3 +33,35 @@ console.log(strNull);
 // 8
 let strUndefined = "undefined";
 console.log(strUndefined);
+
+// ===============================
+// 🟡 Intermediate (9–15)
+// ===============================
+
+// 9
+let u;
+let n = null;
+let empty = "";
+console.log(u, n, empty);
+
+// 10
+let checkVar;
+console.log(checkVar === undefined);
+
+// 11
+let changeU;
+changeU = null;
+
+// 12
+let changeN = null;
+changeN = 5;
+
+// 13
+console.log(null > 0);
+
+// 14
+console.log(null == 0);
+
+// 15
+console.log(undefined == 0);
+
