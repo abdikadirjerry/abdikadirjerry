@@ -65,3 +65,39 @@ let active = true
 console.log(!active)
 
 
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===")
+
+let isLoggedIn = true
+let admin = false
+console.log(isLoggedIn && admin)
+
+let personAge = 25
+console.log(personAge > 18 && personAge < 60)
+
+let examScore = 60
+let attendance = 80
+console.log(examScore >= 50 && attendance >= 75)
+
+let a = 5, b = 7, c = 2
+console.log(a > b || b > c)
+
+let banned = false
+console.log(!banned)
+
+let x = 15
+console.log((x > 10 && x < 20) || (x > 50 && x < 60))
+
+let price = 120
+let member = true
+console.log(price > 100 && member)
+
+let guest = true
+console.log(guest || isLoggedIn)
+
+console.log(a === b && b === c)
+
+console.log(!(a > b))
