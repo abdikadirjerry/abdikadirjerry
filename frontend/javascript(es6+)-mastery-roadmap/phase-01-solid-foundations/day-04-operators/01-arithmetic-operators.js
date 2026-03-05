@@ -103,3 +103,54 @@ let weeks = Math.floor(days / 7)
 let remainingDays = days % 7
 console.log("Weeks:", weeks, "Remaining days:", remainingDays)
 
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===")
+
+// 21 Sum of last two digits
+let num = 456
+let last = num % 10
+let secondLast = Math.floor(num / 10) % 10
+console.log("Sum:", last + secondLast)
+
+// 22 Seconds to minutes + seconds
+let totalSeconds = 130
+let mins = Math.floor(totalSeconds / 60)
+let secs = totalSeconds % 60
+console.log("Minutes:", mins, "Seconds:", secs)
+
+// 23 Price with tax
+let basePrice = 100
+let finalPrice = basePrice + basePrice * 0.10
+console.log("Final price:", finalPrice)
+
+// 24 Km to meters
+let km = 5
+console.log("Meters:", km * 1000)
+
+// 25 (a + b) * c
+let a = 2, b = 3, c = 4
+console.log("Result:", (a + b) * c)
+
+// 26 Remainder
+console.log("9876 % 7 =", 9876 % 7)
+
+// 27 Expression
+console.log("(20 + 5) * (10 - 3) =", (20 + 5) * (10 - 3))
+
+// 28 5000 seconds
+let total = 5000
+let h = Math.floor(total / 3600)
+let m = Math.floor((total % 3600) / 60)
+let s = total % 60
+console.log("Time:", h, "h", m, "m", s, "s")
+
+// 29 (a*b)+c
+console.log("Result:", (3 * 4) + 5)
+
+// 30 Even / odd test
+let check = 11
+console.log("Even?", check % 2 === 0)
