@@ -23,3 +23,21 @@ console.log((20 - 5) * 2)
 console.log(100 / 10 + 5)
 console.log(3 * 3 * 3)
 
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===")
+
+console.log((5 + 5) * (10 - 2))
+console.log(50 - 10 * 3)
+console.log(100 / 5 + 6 * 2)
+console.log(20 + 5 * 4)
+console.log((20 + 5) * 4)
+console.log(10 + 5 * 2 - 3)
+console.log(30 / 5 + 2 * 3)
+console.log((30 / 5 + 2) * 3)
+console.log(7 + 8 * 2)
+console.log((7 + 8) * 2)
+
