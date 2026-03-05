@@ -58,3 +58,37 @@ console.log(score1 > score2)
 
 console.log(0 === 0)
 
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===")
+
+let x = 30
+console.log(x > 20 && x < 40)
+
+let n1 = 15
+let n2 = 20
+console.log(n1 > n2 ? n1 : n2)
+
+let p = 5, q = 5, r = 5
+console.log(p === q && q === r)
+
+console.log("hello" === "hello")
+
+let role = "user"
+console.log(role !== "admin")
+
+console.log("100" == 100)
+
+let password = "abc12345"
+console.log(password.length >= 8)
+
+let year = 2024
+console.log(year > 2000)
+
+console.log(a < b ? a : b)
+
+let num2 = 150
+console.log(num2 < 10 || num2 > 100)
