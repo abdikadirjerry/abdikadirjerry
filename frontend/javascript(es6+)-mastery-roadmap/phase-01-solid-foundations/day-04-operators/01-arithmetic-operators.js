@@ -52,3 +52,54 @@ console.log("9:", sub2)
 let div2 = 81 / 9
 console.log("10:", div2)
 
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===")
+
+// 11 Rectangle area
+let width = 10
+let height = 5
+let area = width * height
+console.log("Area:", area)
+
+// 12 Rectangle perimeter
+let perimeter = 2 * (width + height)
+console.log("Perimeter:", perimeter)
+
+// 13 Minutes to seconds
+let minutes = 5
+let seconds = minutes * 60
+console.log("Seconds:", seconds)
+
+// 14 Hours to minutes
+let hours = 2
+let minutesConverted = hours * 60
+console.log("Minutes:", minutesConverted)
+
+// 15 Remainder of 123 / 10
+console.log("Remainder:", 123 % 10)
+
+// 16 Cube of 4
+console.log("Cube:", 4 ** 3)
+
+// 17 Average
+let avg = (5 + 10 + 15) / 3
+console.log("Average:", avg)
+
+// 18 Last digit
+let number = 987
+console.log("Last digit:", number % 10)
+
+// 19 Total price
+let price = 25 * 3
+console.log("Total price:", price)
+
+// 20 Days to weeks
+let days = 365
+let weeks = Math.floor(days / 7)
+let remainingDays = days % 7
+console.log("Weeks:", weeks, "Remaining days:", remainingDays)
+
