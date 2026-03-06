@@ -41,3 +41,39 @@ console.log(null == undefined);
 // 10. null === undefined
 console.log(null === undefined);
 
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===");
+
+// 11. "0" == false
+console.log("0" == false);
+
+// 12. "0" === false
+console.log("0" === false);
+
+// 13. [] == false
+console.log([] == false);
+
+// 14. [] === false
+console.log([] === false);
+
+// 15. [] == ""
+console.log([] == "");
+
+// 16. [] === ""
+console.log([] === "");
+
+// 17. [1] == 1
+console.log([1] == 1);
+
+// 18. [1] === 1
+console.log([1] === 1);
+
+// 19. "true" == true
+console.log("true" == true);
+
+// 20. "true" === true
+console.log("true" === true);
