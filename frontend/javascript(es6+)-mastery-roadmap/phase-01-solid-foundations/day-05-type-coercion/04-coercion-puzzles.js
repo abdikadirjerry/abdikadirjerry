@@ -41,3 +41,40 @@ console.log("10" + true);
 
 // 10. [] + []
 console.log([] + []);
+
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===");
+
+// 11. [] + {}
+console.log([] + {});
+
+// 12. {} + []
+console.log({} + []);
+
+// 13. [1] + [2]
+console.log([1] + [2]);
+
+// 14. [1] + 1
+console.log([1] + 1);
+
+// 15. 1 + [1]
+console.log(1 + [1]);
+
+// 16. "5" - - "2"
+console.log("5" - - "2");
+
+// 17. "5" + - "2"
+console.log("5" + - "2");
+
+// 18. "5" - + "2"
+console.log("5" - + "2");
+
+// 19. +true
+console.log(+true);
+
+// 20. +false
+console.log(+false);
