@@ -44,6 +44,7 @@ console.log("10" - true);
 // 🟡 Intermediate (11–20)
 // ===============================
 
+console.log("=== INTERMEDIATE ===");
 //11. Evaluate 10 + "5"
 console.log(10 + "5");
 
@@ -73,3 +74,40 @@ console.log("10" - "5" + 2);
 
 //20. Evaluate "10" + "5" - 2
 console.log("10" + "5" - 2);
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===")
+
+// Evaluate "5" + 3 * 2
+console.log("5" + 3 * 2);
+
+// Evaluate ("5" + 3) * 2
+console.log(("5" + 3) * 2 );
+
+// Evaluate "20" / "2" + "5"
+console.log("20" / "2" + "5");
+
+// Evaluate "20" / ("2" + "5")
+console.log("20" / ("2" + "5"));
+
+// Evaluate "100" - "10" * 2
+console.log("100" - "10" * 2);
+
+// Evaluate "50" + 10 * 2
+console.log("50" + 10 * 2);
+
+// Evaluate "8" * "2" + "5"
+console.log("8" * "2" + "5");
+
+// Evaluate "8" * ("2" + "5")
+console.log("8" * ("2" + "5"));
+
+// Evaluate "4" + 4 * 4
+console.log("4" + 4 * 4);
+
+// Evaluate ("4" + 4) * 4
+console.log(("4" + 4) * 4);
