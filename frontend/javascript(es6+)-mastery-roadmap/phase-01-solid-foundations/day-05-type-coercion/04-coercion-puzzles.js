@@ -78,3 +78,40 @@ console.log(+true);
 
 // 20. +false
 console.log(+false);
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+// 21. +"5"
+console.log(+"5");
+
+// 22. +"hello"
+console.log(+"hello");
+
+// 23. Number("10px")
+console.log(Number("10px"));
+
+// 24. parseInt("10px")
+console.log(parseInt("10px"));
+
+// 25. "5" + null
+console.log("5" + null);
+
+// 26. "5" + undefined
+console.log("5" + undefined);
+
+// 27. "5" - null
+console.log("5" - null);
+
+// 28. "5" - undefined
+console.log("5" - undefined);
+
+// 29. null + 1
+console.log(null + 1);
+
+// 30. undefined + 1
+console.log(undefined + 1);
