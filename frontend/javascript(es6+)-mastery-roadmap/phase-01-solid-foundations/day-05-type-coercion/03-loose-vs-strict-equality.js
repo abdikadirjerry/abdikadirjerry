@@ -77,3 +77,40 @@ console.log("true" == true);
 
 // 20. "true" === true
 console.log("true" === true);
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+// 21. [1,2] == "1,2"
+console.log([1,2] == "1,2");
+
+// 22. [1,2] === "1,2"
+console.log([1,2] === "1,2");
+
+// 23. {} == {}
+console.log({} == {});
+
+// 24. {} === {}
+console.log({} === {});
+
+// 25. NaN == NaN
+console.log(NaN == NaN);
+
+// 26. NaN === NaN
+console.log(NaN === NaN);
+
+// 27. Infinity == Infinity
+console.log(Infinity == Infinity);
+
+// 28. Infinity === Infinity
+console.log(Infinity === Infinity);
+
+// 29. false == "false"
+console.log(false == "false");
+
+// 30. false === "false"
+console.log(false === "false");
