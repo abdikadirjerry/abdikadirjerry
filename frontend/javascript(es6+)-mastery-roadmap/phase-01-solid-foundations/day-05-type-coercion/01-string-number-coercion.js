@@ -40,3 +40,36 @@ console.log("5" + true);
 console.log("10" - true);
 
 
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+//11. Evaluate 10 + "5"
+console.log(10 + "5");
+
+//12. Evaluate 10 - "5"
+console.log(10 - "5");
+
+//13. Evaluate "100" + 20
+console.log("100" + 20);
+
+//14. Evaluate "100" - 20
+console.log("100" - 20);
+
+//15. Evaluate "6" * 2 + 1
+console.log("6" * 2 + 1);
+
+//16. Evaluate "6" + 2 * 1
+console.log("6" + 2 * 1);
+
+//17. Evaluate "5" + 5 + 5
+console.log("5" + 5 + 5);
+
+//18. Evaluate 5 + 5 + "5"
+console.log(5 + 5 + "5");
+
+//19. Evaluate "10" - "5" + 2
+console.log("10" - "5" + 2);
+
+//20. Evaluate "10" + "5" - 2
+console.log("10" + "5" - 2);
