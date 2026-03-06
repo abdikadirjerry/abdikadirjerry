@@ -41,3 +41,40 @@ console.log(Boolean({}));
 
 // 10. Boolean("false")
 console.log(Boolean("false"));
+
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===");
+
+// 11. !!0
+console.log(!!0);
+
+// 12. !!1
+console.log(!!1);
+
+// 13. !!""
+console.log(!!"");
+
+// 14. !!"text"
+console.log(!!"text");
+
+// 15. !!null
+console.log(!!null);
+
+// 16. !!undefined
+console.log(!!undefined);
+
+// 17. !!NaN
+console.log(!!NaN);
+
+// 18. !![]
+console.log(!![]);
+
+// 19. !!{}
+console.log(!!{});
+
+// 20. !!"0"
+console.log(!!"0");
