@@ -78,3 +78,40 @@ console.log(!!{});
 
 // 20. !!"0"
 console.log(!!"0");
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+// 21. Boolean(" ")
+console.log(Boolean(" "));
+
+// 22. Boolean("true")
+console.log(Boolean("true"));
+
+// 23. Boolean("0")
+console.log(Boolean("0"));
+
+// 24. Boolean([0])
+console.log(Boolean([0]));
+
+// 25. Boolean({a:1})
+console.log(Boolean({a:1}));
+
+// 26. Boolean(Infinity)
+console.log(Boolean(Infinity));
+
+// 27. Boolean(-Infinity)
+console.log(Boolean(-Infinity));
+
+// 28. Boolean("null")
+console.log(Boolean("null"));
+
+// 29. Boolean("undefined")
+console.log(Boolean("undefined"));
+
+// 30. Boolean(function(){})
+console.log(Boolean(function(){}));
