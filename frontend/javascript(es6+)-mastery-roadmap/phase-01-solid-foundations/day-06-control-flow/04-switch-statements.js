@@ -169,6 +169,8 @@ switch (direction) {
   case "west":
     console.log("You are heading west");
     break;
+  default:
+    console.log("Unknown direction");
 }
 
 //10. Weather type
@@ -225,6 +227,8 @@ switch (difficulty) {
   case "hard":
     console.log("Enemy strength high");
     break;
+  default:
+    console.log("Invalid difficulty");
 }
 
 //13. Payment method
@@ -240,6 +244,8 @@ switch (payment) {
   case "paypal":
     console.log("Pay using PayPal");
     break;
+  default:
+    console.log("Invalid payment method");
 }
 
 //14. HTTP status code messages
@@ -272,6 +278,8 @@ switch (rating) {
   case "R":
     console.log("Restricted");
     break;
+  default:
+    console.log("Unknown rating");
 }
 
 //16. Shipping option
@@ -380,4 +388,236 @@ switch (timeOfDay) {
 
   default:
     console.log("Hello");
+}
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+// 21.Command system
+let command = "restart";
+
+switch (command) {
+  case "start":
+    console.log("System is starting...");
+    break;
+
+  case "stop":
+    console.log("System is stopping...");
+    break;
+
+  case "restart":
+    console.log("System is restarting...");
+    break;
+
+  default:
+    console.log("Unknown command");
+}
+
+//22. File type handling
+let fileType = "png";
+
+switch (fileType) {
+  case "jpg":
+  case "png":
+    console.log("Open with image viewer");
+    break;
+
+  case "pdf":
+    console.log("Open with PDF reader");
+    break;
+
+  case "mp3":
+    console.log("Open with music player");
+    break;
+
+  default:
+    console.log("Unsupported file type");
+}
+
+//23. Error code messages
+let errorCode = 403;
+
+switch (errorCode) {
+  case 400:
+    console.log("Bad Request");
+    break;
+
+  case 401:
+    console.log("Unauthorized");
+    break;
+
+  case 403:
+    console.log("Forbidden");
+    break;
+
+  case 404:
+    console.log("Not Found");
+    break;
+
+  case 500:
+    console.log("Server Error");
+    break;
+
+  default:
+    console.log("Unknown Error");
+}
+
+//24. User permission levels
+let userRole = "editor";
+
+switch (userRole) {
+  case "admin":
+    console.log("Full system access");
+    break;
+
+  case "editor":
+    console.log("Can edit and publish content");
+    break;
+
+  case "viewer":
+    console.log("Read-only access");
+    break;
+
+  default:
+    console.log("No permissions assigned");
+}
+
+//25. Device type detection
+let device = "mobile";
+
+switch (device) {
+  case "mobile":
+    console.log("Mobile layout activated");
+    break;
+
+  case "tablet":
+    console.log("Tablet layout activated");
+    break;
+
+  case "desktop":
+    console.log("Desktop layout activated");
+    break;
+
+  default:
+    console.log("Unknown device type");
+}
+
+//26. Discount code system
+let code = "SAVE20";
+
+switch (code) {
+  case "SAVE10":
+    console.log("10% discount applied");
+    break;
+
+  case "SAVE20":
+    console.log("20% discount applied");
+    break;
+
+  case "FREESHIP":
+    console.log("Free shipping applied");
+    break;
+
+  default:
+    console.log("Invalid discount code");
+}
+
+//27. Chat message type
+let messageType = "image";
+
+switch (messageType) {
+  case "text":
+    console.log("Display text message");
+    break;
+
+  case "image":
+    console.log("Display image message");
+    break;
+
+  case "video":
+    console.log("Display video message");
+    break;
+
+  case "file":
+    console.log("Display file attachment");
+    break;
+
+  default:
+    console.log("Unknown message type");
+}
+
+//28. Game action system
+let action = "attack";
+
+switch (action) {
+  case "attack":
+    console.log("Player attacks enemy");
+    break;
+
+  case "defend":
+    console.log("Player defends");
+    break;
+
+  case "heal":
+    console.log("Player restores health");
+    break;
+
+  default:
+    console.log("Invalid action");
+}
+
+//29. Order status system
+let orderStatus = "shipped";
+
+switch (orderStatus) {
+  case "pending":
+    console.log("Order received");
+    break;
+
+  case "processing":
+    console.log("Order is being prepared");
+    break;
+
+  case "shipped":
+    console.log("Order is on the way");
+    break;
+
+  case "delivered":
+    console.log("Order delivered");
+    break;
+
+  case "cancelled":
+    console.log("Order cancelled");
+    break;
+
+  default:
+    console.log("Unknown order status");
+}
+
+//30. Ticket priority levels
+let priority = "high";
+
+switch (priority) {
+  case "low":
+    console.log("Resolve within 72 hours");
+    break;
+
+  case "medium":
+    console.log("Resolve within 24 hours");
+    break;
+
+  case "high":
+    console.log("Resolve immediately");
+    break;
+
+  case "critical":
+    console.log("Emergency response required");
+    break;
+
+  default:
+    console.log("Unknown priority level");
 }
