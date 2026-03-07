@@ -187,3 +187,197 @@ switch (weather) {
   default:
     console.log("Weather unknown");
 }
+
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===");
+
+//11. Menu selection
+let menu = 2;
+
+switch (menu) {
+  case 1:
+    console.log("Burger");
+    break;
+  case 2:
+    console.log("Pizza");
+    break;
+  case 3:
+    console.log("Pasta");
+    break;
+  default:
+    console.log("Invalid selection");
+}
+
+//12. Game difficulty
+let difficulty = "hard";
+
+switch (difficulty) {
+  case "easy":
+    console.log("Enemy strength low");
+    break;
+  case "medium":
+    console.log("Enemy strength moderate");
+    break;
+  case "hard":
+    console.log("Enemy strength high");
+    break;
+}
+
+//13. Payment method
+let payment = "card";
+
+switch (payment) {
+  case "cash":
+    console.log("Pay with cash");
+    break;
+  case "card":
+    console.log("Pay with credit card");
+    break;
+  case "paypal":
+    console.log("Pay using PayPal");
+    break;
+}
+
+//14. HTTP status code messages
+let status = 404;
+
+switch (status) {
+  case 200:
+    console.log("OK");
+    break;
+  case 404:
+    console.log("Page Not Found");
+    break;
+  case 500:
+    console.log("Server Error");
+    break;
+  default:
+    console.log("Unknown Status");
+}
+
+//15. Movie rating
+let rating = "PG";
+
+switch (rating) {
+  case "G":
+    console.log("General Audience");
+    break;
+  case "PG":
+    console.log("Parental Guidance");
+    break;
+  case "R":
+    console.log("Restricted");
+    break;
+}
+
+//16. Shipping option
+let shipping = "express";
+
+switch (shipping) {
+  case "standard":
+    console.log("Delivery in 5-7 days");
+    break;
+
+  case "express":
+    console.log("Delivery in 2-3 days");
+    break;
+
+  case "overnight":
+    console.log("Delivery next day");
+    break;
+
+  default:
+    console.log("Invalid shipping option");
+}
+
+//17. Notification type
+let notification = "email";
+
+switch (notification) {
+  case "email":
+    console.log("Sending Email Notification");
+    break;
+
+  case "sms":
+    console.log("Sending SMS Notification");
+    break;
+
+  case "push":
+    console.log("Sending Push Notification");
+    break;
+
+  default:
+    console.log("Unknown Notification Type");
+}
+
+//18. App theme selection
+let theme = "dark";
+
+switch (theme) {
+  case "light":
+    console.log("Light theme activated");
+    break;
+
+  case "dark":
+    console.log("Dark theme activated");
+    break;
+
+  case "system":
+    console.log("Using system default theme");
+    break;
+
+  default:
+    console.log("Theme not recognized");
+}
+
+//19 Currency symbol
+let currency = "USD";
+
+switch (currency) {
+  case "USD":
+    console.log("$");
+    break;
+
+  case "EUR":
+    console.log("€");
+    break;
+
+  case "GBP":
+    console.log("£");
+    break;
+
+  case "JPY":
+    console.log("¥");
+    break;
+
+  default:
+    console.log("Unknown currency");
+}
+
+//20. Time of day greeting
+let timeOfDay = "morning";
+
+switch (timeOfDay) {
+  case "morning":
+    console.log("Good Morning");
+    break;
+
+  case "afternoon":
+    console.log("Good Afternoon");
+    break;
+
+  case "evening":
+    console.log("Good Evening");
+    break;
+
+  case "night":
+    console.log("Good Night");
+    break;
+
+  default:
+    console.log("Hello");
+}
