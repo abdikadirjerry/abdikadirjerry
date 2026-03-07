@@ -94,16 +94,14 @@ if (points > 0 && points <= 100) {
 //7. Product price ranges
 let price = 121;
 
-if (price > 0 && price <= 100) {
-    console.log("cheap")
-} else if (price > 100 && price <= 300) {
-    console.log("moderate")
-} else if (price > 300 && price <=1000) {
-    console.log("Expensive");
-} else if (price > 700) {
-    console.log("Luxury");
+if (price <= 100) {
+  console.log("Cheap");
+} else if (price <= 300) {
+  console.log("Moderate");
+} else if (price <= 700) {
+  console.log("Expensive");
 } else {
-  console.log("Invalid price");
+  console.log("Luxury");
 }
 
 //8. Game difficulty levels
@@ -124,14 +122,14 @@ if (gameLevel > 0 && gameLevel <= 25) {
 //9. Password strength
 let password = "2344425678@";
 
-if (password.length > 0 && password.length <= 6) {
-    console.log("Weak password");
-} else if (password.length > 6 && password.length <10) {
-    console.log("medium password");
-} else if (password.length > 10 && password.includes("@")&& /\d/.test(password)) {
-    console.log("strong password");
+if (password.length < 6) {
+  console.log("Weak");
+} else if (password.length < 10) {
+  console.log("Medium");
+} else if (password.includes("@") && /\d/.test(password)) {
+  console.log("Strong");
 } else {
-    console.log("normal password");
+  console.log("Normal");
 }
 
 //10. Day type weekday/weekend
@@ -161,7 +159,7 @@ console.log("=== INTERMEDIATE ===");
 //11. BMI categories
 let height = 178;
 let weight = 75;
-let BMI = (weight / height * height);
+weight / (height * height);
 
 if (BMI > 0 && BMI <= 18) {
     console.log("Underweight");
@@ -210,13 +208,13 @@ console.log("Tax owed: $" + tax);
 //14. Student grade classification
 let score1 = 82;
 
-if (score >= 90) {
+if (score1 >= 90) {
   console.log("Grade A");
-} else if (score >= 80) {
+} else if (score1 >= 80) {
   console.log("Grade B");
-} else if (score >= 70) {
+} else if (score1 >= 70) {
   console.log("Grade C");
-} else if (score >= 60) {
+} else if (score1 >= 60) {
   console.log("Grade D");
 } else {
   console.log("Grade F");
@@ -225,9 +223,9 @@ if (score >= 90) {
 //15. Movie age rating
 let age1 = 15;
 
-if (age < 13) {
+if (age1 < 13) {
   console.log("PG");
-} else if (age < 18) {
+} else if (age1 < 18) {
   console.log("PG-13");
 } else {
   console.log("R Rated");
@@ -236,11 +234,11 @@ if (age < 13) {
 //16. Weather type
 let temperature1 = 32;
 
-if (temperature >= 35) {
+if (temperature1 >= 35) {
   console.log("Hot Weather");
-} else if (temperature >= 20) {
+} else if (temperature1 >= 20) {
   console.log("Warm Weather");
-} else if (temperature >= 10) {
+} else if (temperature1 >= 10) {
   console.log("Cool Weather");
 } else {
   console.log("Cold Weather");
@@ -250,11 +248,11 @@ if (temperature >= 35) {
 let weight1 = 7;
 let cost;
 
-if (weight <= 2) {
+if (weight1 <= 2) {
   cost = 5;
-} else if (weight <= 5) {
+} else if (weight1 <= 5) {
   cost = 10;
-} else if (weight <= 10) {
+} else if (weight1 <= 10) {
   cost = 15;
 } else {
   cost = 25;
@@ -294,12 +292,147 @@ if (marks >= 75) {
 //20. Driving speed penalty levels
 let speed1 = 110;
 
-if (speed <= 60) {
+if (speed1 <= 60) {
   console.log("Safe Speed");
-} else if (speed <= 80) {
+} else if (speed1 <= 80) {
   console.log("Warning");
-} else if (speed <= 100) {
+} else if (speed1 <= 100) {
   console.log("Fine");
 } else {
   console.log("License Suspension");
+}
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+//21. Credit score categories
+let creditScore = 720;
+
+if (creditScore >= 800) {
+  console.log("Excellent Credit");
+} else if (creditScore >= 740) {
+  console.log("Very Good Credit");
+} else if (creditScore >= 670) {
+  console.log("Good Credit");
+} else if (creditScore >= 580) {
+  console.log("Fair Credit");
+} else {
+  console.log("Poor Credit");
+}
+
+//22. Loan approval rules
+let income = 4000;
+let creditScore1 = 700;
+
+if (income >= 5000 && creditScore1 >= 750) {
+  console.log("Loan Approved - Premium");
+} else if (income >= 3000 && creditScore1 >= 650) {
+  console.log("Loan Approved");
+} else {
+  console.log("Loan Rejected");
+}
+
+//23. Membership tiers
+let points1 = 1200;
+
+if (points1 >= 5000) {
+  console.log("Platinum Member");
+} else if (points1 >= 2000) {
+  console.log("Gold Member");
+} else if (points1 >= 1000) {
+  console.log("Silver Member");
+} else {
+  console.log("Bronze Member");
+}
+
+//24. Shipping zones
+let country = "Kenya";
+
+if (country === "Somalia") {
+  console.log("Zone 1 - Local Shipping");
+} else if (country === "Kenya" || country === "Ethiopia") {
+  console.log("Zone 2 - Regional Shipping");
+} else {
+  console.log("Zone 3 - International Shipping");
+}
+
+//25. Insurance risk levels
+let age2 = 22;
+
+if (age2 < 25) {
+  console.log("High Risk");
+} else if (age2 <= 60) {
+  console.log("Medium Risk");
+} else {
+  console.log("Higher Risk - Senior Category");
+}
+
+//26. Server response status categories
+let statusCode = 404;
+
+if (statusCode >= 200 && statusCode < 300) {
+  console.log("Success");
+} else if (statusCode >= 300 && statusCode < 400) {
+  console.log("Redirection");
+} else if (statusCode >= 400 && statusCode < 500) {
+  console.log("Client Error");
+} else if (statusCode >= 500) {
+  console.log("Server Error");
+} else {
+  console.log("Unknown Status");
+}
+
+//27. Student scholarship eligibility
+let gpa = 3.6;
+let income1 = 1500;
+
+if (gpa >= 3.8 && income1 < 2000) {
+  console.log("Full Scholarship");
+} else if (gpa >= 3.5) {
+  console.log("Partial Scholarship");
+} else if (gpa >= 3.0) {
+  console.log("Eligible for Financial Aid");
+} else {
+  console.log("Not Eligible");
+}
+
+//28. Fitness categories
+let bmi = 27;
+
+if (bmi < 18.5) {
+  console.log("Underweight");
+} else if (bmi < 25) {
+  console.log("Normal Weight");
+} else if (bmi < 30) {
+  console.log("Overweight");
+} else {
+  console.log("Obese");
+}
+
+//29. Traffic light system
+let light = "yellow";
+
+if (light === "green") {
+  console.log("Go");
+} else if (light === "yellow") {
+  console.log("Slow Down");
+} else if (light === "red") {
+  console.log("Stop");
+} else {
+  console.log("Invalid Light");
+}
+
+//30. Order priority levels
+let orderAmount = 1200;
+
+if (orderAmount >= 1000) {
+  console.log("High Priority Order");
+} else if (orderAmount >= 500) {
+  console.log("Medium Priority Order");
+} else {
+  console.log("Standard Priority");
 }
