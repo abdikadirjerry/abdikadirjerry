@@ -1,6 +1,6 @@
 /*
 =====================================
-01 — if statement (30)
+01 — if else (30)
 =====================================
 */
 
@@ -50,16 +50,17 @@ if (numb > 0) {
 //5. Check if temperature hot or cold
 let temperature = 32;
 
-if (temperature >= 15) {
+if (temperature >= 30) {
   console.log("Hot temperature");
 } else {
   console.log("Cold temperature");
 }
 
 //6. Check if password correct or wrong
-let isPassword = "1234567";
+let password = "1234567";
+let correctPassword = "1234567";
 
-if (isPassword) {
+if (password === correctPassword) {
   console.log("Correct password");
 } else {
   console.log("Incorrect password");
@@ -93,9 +94,9 @@ if (num1 > 50) {
 }
 
 //10. Check if day is weekend or weekday
-let day = "saturday";
+let day = "Saturday";
 
-if (day === "Sunday" || day === "Monday") {
+if (day === "Saturday" || day === "Sunday") {
   console.log("It's a weekend");
 } else {
   console.log("It's a weekday");
@@ -156,10 +157,10 @@ if (userScore > 90) {
 // 16. Check if cart empty
 let cart = 0;
 
-if (cart < 0) {
-    console.log("Carts are empty");
+if (cart === 0) {
+    console.log("Cart are empty");
 } else {
-    console.log("Carts left");
+    console.log("Cart has items");
 }
 
 // 17. Check if username matches
@@ -187,14 +188,110 @@ let salary = 12000;
 if (salary > 10000) {
     console.log("You're salary is greater than 10000");
 } else {
-    console.log("You're salary is less than 0");
+    console.log("You're salary is 10000 or less");
 }
 
 // 20. Check if temperature freezing
 let temperature1 = 9;
 
-if (temperature1 < 10) {
+if (temperature1 <= 0) {
     console.log("Temperature is freezing");
 } else {
     console.log("Temperature is not freezing")
+}
+
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+//21.Check if student passed exam
+let studentScore = 100
+
+if (studentScore >= 50) {
+    console.log("Passed")
+} else {
+    console.log("Failed")
+}
+
+//22. Check if login success
+let isLogin = true;
+
+if (isLogin) {
+    console.log("Login Success full");
+} else {
+    console.log("Login failed");
+}
+
+//23. Check if user banned
+let userStatus = "banned";
+
+if (userStatus === "banned") {
+    console.log("User banned");
+} else {
+    console.log("User is not banned");
+}
+
+//24. Check if payment completed
+let payment = true;
+
+if (payment) {
+    console.log("Payment Successfully");
+} else {
+    console.log("Payment not successful");
+}
+
+//25. Check if item qualifies for free shipping
+let item = 12;
+
+if (item >= 10) {
+    console.log("It's free for shipping");
+} else {
+    console.log("It's not free for shipping");
+}
+
+//26. Check if user verified email
+let isEmailVerified = true;
+
+if (isEmailVerified) {
+    console.log("Email is verified");
+} else {
+    console.log("Email is not verified");
+}
+
+//27. Check if password strong
+let userPassword = "!$_password"
+
+if (userPassword.includes("!")) {
+    console.log("You're password is strong");
+} else {
+    console.log("You're password is weak")
+}
+//28. Check if number multiple of 7
+let number2 = 21;
+
+if (number2 % 7 === 0) {
+    console.log("Number is multiple of 7");
+} else {
+    console.log("Number is not multiple of 7");
+}
+
+//29. Check if order > 500 for discount
+let order = 750;
+
+if (order > 500) {
+  console.log("You get a 25% discount");
+} else {
+  console.log("No discount");
+}
+
+//30. Check if user premium member
+let userPremium = true;
+
+if (userPremium === true) {
+    console.log("User is premium member");
+} else {
+    console.log("User is not a premium member")
 }
