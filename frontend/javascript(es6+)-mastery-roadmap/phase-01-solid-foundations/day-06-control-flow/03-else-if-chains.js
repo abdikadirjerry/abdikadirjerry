@@ -150,3 +150,156 @@ if (day === "saturday" || day === "sunday") {
 } else {
     console.log("Invalid day");
 }
+
+
+// ===============================
+// 🟡 Intermediate (11–20)
+// ===============================
+
+console.log("=== INTERMEDIATE ===");
+
+//11. BMI categories
+let height = 178;
+let weight = 75;
+let BMI = (weight / height * height);
+
+if (BMI > 0 && BMI <= 18) {
+    console.log("Underweight");
+} else if (BMI > 18 && BMI <= 25) {
+    console.log("Healthy weight");
+} else if (BMI > 25 && BMI <= 30) {
+    console.log("Overweight");
+} else {
+    console.log("Obese")
+}
+
+//12. Internet speed categories
+let internetSpeed = 11;
+
+if (internetSpeed > 0 && internetSpeed <= 10) {
+    console.log("low speed");
+} else if (internetSpeed > 10 && internetSpeed <= 30) {
+    console.log("normal speed");
+} else if (internetSpeed > 30 && internetSpeed <= 60) {
+    console.log("High speed");
+} else if (internetSpeed > 100) {
+    console.log("extremely high speed");
+} else {
+    console.log("invalid speed");
+}
+
+//13. Salary tax brackets
+let salary = 50000;
+let tax;
+
+if (salary <=1000) {
+    tax = 0;
+} else if (salary <= 2000) {
+    tax = (salary * 10) / 100;
+} else if (salary <= 3000) {
+    tax = (salary * 20) / 100;
+} else if (salary <= 5000) {
+    tax = (salary * 30) / 100;
+} else {
+    tax = (salary * 45) / 100;
+}
+
+console.log("Salary: $" + salary);
+console.log("Tax owed: $" + tax);
+
+//14. Student grade classification
+let score1 = 82;
+
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 80) {
+  console.log("Grade B");
+} else if (score >= 70) {
+  console.log("Grade C");
+} else if (score >= 60) {
+  console.log("Grade D");
+} else {
+  console.log("Grade F");
+}
+
+//15. Movie age rating
+let age1 = 15;
+
+if (age < 13) {
+  console.log("PG");
+} else if (age < 18) {
+  console.log("PG-13");
+} else {
+  console.log("R Rated");
+}
+
+//16. Weather type
+let temperature1 = 32;
+
+if (temperature >= 35) {
+  console.log("Hot Weather");
+} else if (temperature >= 20) {
+  console.log("Warm Weather");
+} else if (temperature >= 10) {
+  console.log("Cool Weather");
+} else {
+  console.log("Cold Weather");
+}
+
+//17. Shipping cost tiers
+let weight1 = 7;
+let cost;
+
+if (weight <= 2) {
+  cost = 5;
+} else if (weight <= 5) {
+  cost = 10;
+} else if (weight <= 10) {
+  cost = 15;
+} else {
+  cost = 25;
+}
+
+console.log("Shipping cost: $" + cost);
+
+//18. Discount levels
+let purchase = 250;
+let discount;
+
+if (purchase >= 500) {
+  discount = 20;
+} else if (purchase >= 200) {
+  discount = 10;
+} else if (purchase >= 100) {
+  discount = 5;
+} else {
+  discount = 0;
+}
+
+console.log("Discount: " + discount + "%");
+
+//19. Exam result classification
+let marks = 65;
+
+if (marks >= 75) {
+  console.log("Distinction");
+} else if (marks >= 60) {
+  console.log("Pass");
+} else if (marks >= 50) {
+  console.log("Supplementary Exam");
+} else {
+  console.log("Fail");
+}
+
+//20. Driving speed penalty levels
+let speed1 = 110;
+
+if (speed <= 60) {
+  console.log("Safe Speed");
+} else if (speed <= 80) {
+  console.log("Warning");
+} else if (speed <= 100) {
+  console.log("Fine");
+} else {
+  console.log("License Suspension");
+}
