@@ -56,15 +56,15 @@ if (numNegative < 0) {
 //7. Check if password length > 8
 let pass = 123456789;
 
-if (pass > 8) {
+if (pass.length > 8) {
   console.log("You're password is strong");
 }
 
 //8. Check if user is logged in
 let isLogged = true;
 
-if (isLogged === true) {
-  console.log("You're logged in")
+if (isLogged) {
+  console.log("User is logged in")
 }
 
 //9. Check if price > 100
@@ -119,7 +119,7 @@ if (empty === "") {
 //15. Check if array length > 5
 let arr = [1, 2, 3, 4, 5, 6, 7];
 
-if (arr.length > 6) {
+if (arr.length > 5) {
   console.log("You're array length is greaten then 6");
 }
 
@@ -147,14 +147,89 @@ if (item > 0) {
 //19. Check if item stock > 0
 let score1 = 100;
 
-if (score1 == 100) {
+if (score1 === 100) {
   console.log("You're claver student");
 }
 
 //20 Check if username exists
-let userName = "Jerry";
-let existUsername = "Jerry"
+let username = "Jerry";
 
-if (existUsername === userName) {
-  console.log("Username is already exist");
+if (username) {
+  console.log("Username exists");
+}
+
+// ===============================
+// 🔴 Advanced (21–30)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+//21. Check if number divisible by 3
+let num1 = 3;
+
+if (num1 % 3 === 0) {
+  console.log("You're number is divisible by 3");
+}
+
+//22. Check if number divisible by 3
+let num2 = 5;
+
+if (num2 % 5 === 0) {
+  console.log("You're number is divisible by 5");
+}
+
+//23. Check if divisible by 3 AND 5
+let num3 = 15;
+
+if (num3 % 3 === 0 && num3 % 5 === 0) {
+  console.log("You're number is divisible by 3 AND 5")
+}
+
+//24. Check if number between 10 and 20
+let num4 = 11;
+
+if (num4 > 10 && num4 <20) {
+  console.log("You're number is between 10 and 20")
+}
+
+//25. Check if temperature < 0
+let temperature = -13;
+
+if (temperature < 0) {
+  console.log("Temperature is cold");
+}
+
+//26. Check if user role is "admin"
+let role = "admin";
+
+if (role === "admin") {
+  console.log("You are admin");
+}
+
+//27. Check if cart items > 0
+let cart = 12;
+
+if (cart > 0) {
+  console.log("Cart has items");
+}
+
+//28. Check if login attempts > 3
+let loginAttempts = 4;
+
+if (loginAttempts > 3) {
+  console.log("Too many login attempts");
+}
+
+//29. Check if email includes "@"
+let email = "test@test.com";
+
+if (email.includes("@")) {
+  console.log("You're email is correct");
+}
+
+//30. Check if password includes "!"
+let password = "axios!";
+
+if (password.includes("!")) {
+  console.log("You're password is good");
 }
