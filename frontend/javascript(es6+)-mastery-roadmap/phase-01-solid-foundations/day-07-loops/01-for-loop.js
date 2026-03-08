@@ -87,3 +87,49 @@ for (let i = 0; i <= js.length; i++) {
 }
 console.log(count);
 
+
+// ===============================
+// 🔴 Advanced (9–12)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+//9. Generate a star triangle
+for (let i = 1; i <= 5; i++) {
+    let line = "";
+    for (let j = 1; j <= i; j++) {
+        line += "*";
+    }
+    console.log(line);
+}
+
+//10. Search for a value in an array
+let arrStore = [4, 7, 12, 19, 3];
+
+for (let i = 0; i <= arrStore.length; i++) {
+    if (arrStore[i] === 19){
+        console.log("found 19 at index", i);
+    }
+}
+
+//11. Calculate factorial
+let factorial = 1;
+let number = 6;
+
+for (let i = 1; i <= number; i++) {
+    factorial *= i;
+}
+console.log("Factorial of", number, "is", factorial);
+
+//12. Implement FizzBuzz
+for (let i = 1; i <= 50; i++) {
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
