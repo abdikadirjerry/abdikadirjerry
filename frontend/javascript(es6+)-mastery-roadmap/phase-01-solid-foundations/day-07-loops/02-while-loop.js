@@ -128,12 +128,12 @@ if (attempts === 3) {
 
 //10. Use a while loop to find the smallest number in an array.
 let numbers1 = [12, 45, 7, 23, 89, 34];
-let smallest = numbers[0];
+let smallest = numbers1[0];
 let i = 1;
 
-while (i < numbers.length) {
-  if (numbers[i] < smallest) {
-    smallest = numbers[i];
+while (i < numbers1.length) {
+  if (numbers1[i] < smallest) {
+    smallest = numbers1[i];
   }
   i++;
 }
@@ -145,12 +145,12 @@ let numbers2 = [10, 20, 30, 40, 50];
 let sum1 = 0;
 // let i = 0;
 
-while (i < numbers.length) {
-  sum += numbers[i];
+while (i < numbers2.length) {
+  sum1 += numbers2[i];
   i++;
 }
 
-let average = sum / numbers.length;
+let average = sum1 / numbers2.length;
 console.log(average);
 
 //12. Create a while loop that counts how many numbers between 1 and 100 are divisible by 7.
@@ -159,9 +159,9 @@ let number = 1;
 
 while (number <= 100) {
   if (number % 7 === 0) {
-    count++;
+    counts++;
   }
   number++;
 }
 
-console.log(count);
+console.log(counts);

@@ -71,10 +71,10 @@ console.log(sum);
 let sum1 = 0;
 // let i = 1;
 do {
-  sum += i;
+  sum1 += i;
   console.log(i);
   i++;
-} while (sum <= 100);
+} while (sum1 <= 100);
 
 //8. Find largest number in an array
 let numbers = [12, 45, 7, 23, 89, 34];
@@ -90,3 +90,53 @@ do {
 
 console.log(largest);
 
+// ===============================
+// 🔴 Advanced (9–12)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+//9. Simple menu loop simulation until user exits
+let choice;
+do {
+  choice = prompt("Menu:\n1. Option 1\n2. Option 2\n3. Exit");
+  if (choice === "1") console.log("You chose Option 1");
+  else if (choice === "2") console.log("You chose Option 2");
+} while (choice !== "3");
+console.log("Exited menu.");
+
+//10. Find prime numbers between 1–30
+let num = 2;
+do {
+  let isPrime = true;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+  if (isPrime) console.log(num);
+  num++;
+} while (num <= 30);
+
+//11. Generate number sequence doubling until over 500
+let num1 = 1;
+do {
+  console.log(num);
+  num *= 2;
+} while (num <= 500);
+
+//12.Count how many vowels appear in a sentence
+let sentence = "This is an example sentence";
+let vowels = "aeiouAEIOU";
+let counts = 0;
+let i = 0;
+
+do {
+  if (vowels.includes(sentence[i])) {
+    counts++;
+  }
+  i++;
+} while (i < sentence.length);
+
+console.log(count);
