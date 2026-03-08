@@ -90,7 +90,7 @@ console.log(count);
 //8. Use a while loop to reverse a word.
 let word = "coding";
 let reversed = "";
-let i = word.length - 1;
+// let i = word.length - 1;
 
 while (i >= 0) {
   reversed += word[i];
@@ -98,3 +98,70 @@ while (i >= 0) {
 }
 
 console.log(reversed);
+
+
+// ===============================
+// 🔴 Advanced (9–12)
+// ===============================
+
+console.log("=== ADVANCED ===");
+
+//9. Simulate login attempts using a while loop where the user has maximum 3 tries.
+let correctPassword = "1234";
+let attempts = 0;
+let userInput;
+
+while (attempts < 3) {
+  userInput = prompt("Enter your password:");
+  if (userInput === correctPassword) {
+    console.log("Login successful!");
+    break;
+  } else {
+    console.log("Incorrect password");
+    attempts++;
+  }
+}
+
+if (attempts === 3) {
+  console.log("Maximum attempts reached. Access denied.");
+}
+
+//10. Use a while loop to find the smallest number in an array.
+let numbers1 = [12, 45, 7, 23, 89, 34];
+let smallest = numbers[0];
+let i = 1;
+
+while (i < numbers.length) {
+  if (numbers[i] < smallest) {
+    smallest = numbers[i];
+  }
+  i++;
+}
+
+console.log(smallest);
+
+//11. Calculate the average value of numbers in an array.
+let numbers2 = [10, 20, 30, 40, 50];
+let sum1 = 0;
+// let i = 0;
+
+while (i < numbers.length) {
+  sum += numbers[i];
+  i++;
+}
+
+let average = sum / numbers.length;
+console.log(average);
+
+//12. Create a while loop that counts how many numbers between 1 and 100 are divisible by 7.
+let counts = 0;
+let number = 1;
+
+while (number <= 100) {
+  if (number % 7 === 0) {
+    count++;
+  }
+  number++;
+}
+
+console.log(count);
