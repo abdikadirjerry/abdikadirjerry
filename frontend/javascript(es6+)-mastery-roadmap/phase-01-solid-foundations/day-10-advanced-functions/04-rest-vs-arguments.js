@@ -66,3 +66,44 @@ function filterGreaterThan10(...numbers) {
   }
   return result;
 }
+
+console.log("=== ADVANCED ===");
+
+// 7
+function analyzeFunction() {
+  let max = arguments[0];
+  for (let i = 1; i < arguments.length; i++) {
+    if (arguments[i] > max) max = arguments[i];
+  }
+  console.log("Total arguments:", arguments.length);
+  console.log("Arguments list:", Array.from(arguments));
+  console.log("Largest value:", max);
+}
+
+// 8
+function positiveNumbers(...numbers) {
+  let result = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) result.push(numbers[i]);
+  }
+  return result;
+}
+
+// 9
+function calculate(operation, ...numbers) {
+  let result;
+  if (operation === "sum") {
+    result = 0;
+    for (let i = 0; i < numbers.length; i++) result += numbers[i];
+  } else if (operation === "multiply") {
+    result = 1;
+    for (let i = 0; i < numbers.length; i++) result *= numbers[i];
+  } else if (operation === "average") {
+    result = 0;
+    for (let i = 0; i < numbers.length; i++) result += numbers[i];
+    result = result / numbers.length;
+  } else {
+    result = null;
+  }
+  return result;
+}
