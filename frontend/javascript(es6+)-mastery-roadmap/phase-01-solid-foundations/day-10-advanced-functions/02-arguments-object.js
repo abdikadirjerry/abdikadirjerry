@@ -57,3 +57,44 @@ function countEven() {
 }
 
 console.log(countEven(2, 5, 6, 9, 10));
+
+console.log("=== ADVANCED ===");
+// 7
+function reverseArgs() {
+  for (let i = arguments.length - 1; i >= 0; i--) {
+    console.log(arguments[i]);
+  }
+}
+console.log(reverseArgs(2, 5, 6, 9, 10));
+
+// 8
+function averageArgs() {
+  if (arguments.length === 0) return 0;
+
+  let sum = 0;
+
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+
+  return sum / arguments.length;
+}
+console.log(averageArgs(2, 4, 6, 8));
+
+// 9
+function typeCounter() {
+  let numbers = 0;
+  let strings = 0;
+  let booleans = 0;
+
+  for (let i = 0; i < arguments.length; i++) {
+    let type = typeof arguments[i];
+
+    if (type === "number") numbers++;
+    else if (type === "string") strings++;
+    else if (type === "boolean") booleans++;
+  }
+  return { numbers, strings, booleans };
+}
+
+console.log(typeCounter(10, "hello", true, 5, "world", false));
