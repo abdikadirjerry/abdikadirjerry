@@ -47,3 +47,45 @@ function sumOddNumbers(...nums) {
   return sum;
 }
 
+console.log("=== ADVANCED ===");
+
+// 7
+function getStats(...numbers) {
+  let sum = 0;
+  let min = numbers[0];
+  let max = numbers[0];
+
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+    if (numbers[i] < min) min = numbers[i];
+    if (numbers[i] > max) max = numbers[i];
+  }
+
+  let average = sum / numbers.length;
+  return { min: min, max: max, sum: sum, average: average };
+}
+
+// 8
+function removeDuplicates(...numbers) {
+  let unique = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (unique.indexOf(numbers[i]) === -1) {
+      unique.push(numbers[i]);
+    }
+  }
+  return unique;
+}
+
+// 9
+function numberSorter(...numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[i] < numbers[j]) {
+        let temp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = temp;
+      }
+    }
+  }
+  return numbers;
+}
