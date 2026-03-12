@@ -1,6 +1,6 @@
 // Temporal Dead Zone Example
 
-// console.log(score);
+console.log(score);
 // This would cause an error because of TDZ
 
 let score = 100;
