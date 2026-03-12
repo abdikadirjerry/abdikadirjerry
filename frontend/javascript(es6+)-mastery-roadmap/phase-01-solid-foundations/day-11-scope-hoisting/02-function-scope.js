@@ -8,5 +8,5 @@ function greetUser() {
 
 greetUser();
 
-console.log(message);
+// console.log(message);
 // This would cause an error because message is inside the function
