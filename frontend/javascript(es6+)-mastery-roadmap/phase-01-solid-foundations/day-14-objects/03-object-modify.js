@@ -9,6 +9,7 @@ person.phone = 123456789;
 
 console.log(person);
 
+
 // challenge 2
 const student = {
   name: "mohamed",
@@ -19,6 +20,7 @@ const student = {
 student.phone = 123456789;
 
 console.log(student);
+
 
 // challenge 3
 const book = {
