@@ -10,8 +10,10 @@ const user = {
 
 console.log(user);
 
+
 // challenge 2
 console.log(user.address);
+
 
 // challenge 3
 const person = {
