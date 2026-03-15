@@ -5,10 +5,10 @@ const user = {
   country: "Somalia",
 };
 
-// Get all keys
 const keys = Object.keys(user);
 
 console.log(keys);
+
 
 // Challenge 2
 const users = {
@@ -17,10 +17,10 @@ const users = {
   country: "Somalia",
 };
 
-// Get all values
 const values = Object.values(users);
 
 console.log(values);
+
 
 // Challenge 3
 const user1 = {
