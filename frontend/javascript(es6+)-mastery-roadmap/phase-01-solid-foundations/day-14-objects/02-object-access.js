@@ -6,6 +6,7 @@ const user = {
 
 console.log(user.username);
 
+
 // challenge 2
 const status = {
   name: "mohamed",
@@ -13,6 +14,7 @@ const status = {
 };
 
 console.log(status["name"]);
+
 
 // challenge 3
 const key = "address";
