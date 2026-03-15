@@ -1,0 +1,25 @@
+{
+  "name": "fullstack_web_application_development_2026",
+  "version": "1.0.0",
+  "description": "Welcome to my Full-Stack Web Application Development repository 👋  \r This repository contains all the projects I build while following a **1-year structured roadmap (365 days)** to become a **job-ready full-stack web developer**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdikadirjerry/abdikadirjerry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdikadirjerry/abdikadirjerry/issues"
+  },
+  "homepage": "https://github.com/abdikadirjerry/abdikadirjerry#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0"
+  }
+}
