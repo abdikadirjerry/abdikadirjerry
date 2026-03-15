@@ -7,6 +7,7 @@ const car = {
 
 console.log(car);
 
+
 // challenge 2
 const student = {
   name: "ashton",
@@ -15,6 +16,7 @@ const student = {
 };
 
 console.log(student);
+
 
 // challenge 3
 const book = {
