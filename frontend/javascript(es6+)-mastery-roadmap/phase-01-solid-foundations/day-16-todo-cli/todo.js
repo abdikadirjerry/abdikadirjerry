@@ -10,4 +10,11 @@ if (command === "add") {
   };
   tasks.push(task);
   console.log(`Task added: ${value}`);
+} else if (command === "list") {
+  console.log("Your Tasks:");
+
+  for (let i = 0; i < tasks.length; i++) {
+    const status = tasks[i].completed ? "✅" : "❌";
+    console.log(`${i + 1}. ${tasks[i].text} ${status}`);
+  }
 } 
