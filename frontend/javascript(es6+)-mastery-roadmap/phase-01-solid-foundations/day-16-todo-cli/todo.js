@@ -17,4 +17,12 @@ if (command === "add") {
     const status = tasks[i].completed ? "✅" : "❌";
     console.log(`${i + 1}. ${tasks[i].text} ${status}`);
   }
+} else if (command === "done") {
+  const index = value - 1;
+  if (tasks[index]) {
+    tasks[index].completed = true;
+    console.log(`Task ${value} marked as done`);
+  } else {
+    console.log("Task not found");
+  }
 } 
