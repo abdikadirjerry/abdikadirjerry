@@ -25,4 +25,12 @@ if (command === "add") {
   } else {
     console.log("Task not found");
   }
-} 
+} else if (command === "delete") {
+  const index = value - 1;
+  if (tasks[index]) {
+    tasks.splice(index, 1);
+    console.log(`Task ${value} deleted`);
+  } else {
+    console.log("Task not found");
+  }
+}
