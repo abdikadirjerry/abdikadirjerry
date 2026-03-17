@@ -26,13 +26,13 @@ This is a **professional discipline project**.
 # 📂 Repository Structure
 
 ```
-javascript-backend-mastery-71-days/
+javascript-mastery-100-days/
 │
-├── PHASE-1-SOLID-FOUNDATIONS/
+├── PHASE-1-FOUNDATIONS/
 ├── PHASE-2-DSA-FUNDAMENTALS/
 ├── PHASE-3-CORE-JS-DEEP/
-├── PHASE-4-ASYNCHRONOUS/
-├── PHASE-5-DEEP-JAVASCRIPT/
+├── PHASE-4-ASYNCHRONOUS-JS/
+├── PHASE-5-ADVANCED-ENGINEERING/
 │
 └── projects/
 ```
