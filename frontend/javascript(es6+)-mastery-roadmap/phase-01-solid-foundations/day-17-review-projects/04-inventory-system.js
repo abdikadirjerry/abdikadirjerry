@@ -5,31 +5,32 @@ const inventory = [
   { name: "Mango", stock: 8, price: 4 },
 ];
 
-let total = 0;
+const total = inventory.length;
+
 let inStock = 0;
 let outStock = 0;
 let totalInventory = 0;
 let available = [];
 
 for (let i = 0; i < inventory.length; i++) {
-  total++;
+  const item = inventory[i];
 
-  if (inventory[i].stock > 0) {
+  if (item.stock > 0) {
     inStock++;
-    available.push(inventory[i].name);
+    available.push(item.name);
   } else {
     outStock++;
   }
 
-  totalInventory += inventory[i].stock * inventory[i].price;
+  totalInventory += item.stock * item.price;
 }
 
 console.log(`Total Products: ${total}`);
 console.log(`In Stock: ${inStock}`);
 console.log(`Out of Stock: ${outStock}`);
 console.log(`Total Inventory Value: ${totalInventory}`);
-console.log("Available Products:")
 
+console.log("Available Products:");
 for (let i = 0; i < available.length; i++) {
-  console.log(` -${available[i]}`);
+  console.log(`- ${available[i]}`);
 }
