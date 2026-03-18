@@ -6,29 +6,30 @@ const users = [
 ];
 
 let active = 0;
+let inactive = 0;
 let adult = 0;
-let inActive = 0;
-let names = [];
+let activeNames = [];
 
 for (let i = 0; i < users.length; i++) {
-  if (users[i].isActive === true) {
-    active += users[i].isActive;
+  const user = users[i];
+
+  if (user.isActive) {
+    active++;
+    activeNames.push(user.name);
+  } else {
+    inactive++;
   }
 
-  if (users[i].age >= 18) {
+  if (user.age >= 18) {
     adult++;
-  }
-
-  if (users[i].isActive === false) {
-    inActive++;
-  }
-
-  if (users[i].isActive === true) {
-    names += users[i].name;
   }
 }
 
 console.log(`Active Users: ${active}`);
+console.log(`Inactive Users: ${inactive}`);
 console.log(`Adults: ${adult}`);
-console.log(`InActive Users: ${inActive}`);
-console.log(`Names of Active Users: ${names}`);
+console.log("Names of Active Users:");
+
+for (let i = 0; i < activeNames.length; i++) {
+  console.log(`- ${activeNames[i]}`);
+}
