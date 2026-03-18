@@ -1,13 +1,13 @@
 const scores = [70, 85, 90, 40, 60, 30, 100];
+
 let sum = 0;
 let passed = 0;
 let highest = scores[0];
 let lowest = scores[0];
-let average = scores[0];
 
 for (let i = 0; i < scores.length; i++) {
-  sum += scores[i] / scores.length;
-  average = sum;
+  sum += scores[i];
+
   if (scores[i] > highest) {
     highest = scores[i];
   }
@@ -20,7 +20,10 @@ for (let i = 0; i < scores.length; i++) {
     passed++;
   }
 }
-console.log(average);
-console.log(highest);
-console.log(lowest);
-console.log(passed);
+
+const average = sum / scores.length;
+
+console.log(`Average: ${average}`);
+console.log(`Highest: ${highest}`);
+console.log(`Lowest: ${lowest}`);
+console.log(`Passed Students: ${passed}`);
