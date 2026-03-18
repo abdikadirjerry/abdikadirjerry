@@ -5,21 +5,22 @@ const cart = [
 ];
 
 let total = 0;
-let expensive = cart[0].price;
-let cheapest = cart[0].price;
+
+let mostExpensive = cart[0];
+let cheapest = cart[0];
 
 for (let i = 0; i < cart.length; i++) {
   total += cart[i].price;
 
-  if (cart[i].price > expensive) {
-    expensive = cart[i].name;
+  if (cart[i].price > mostExpensive.price) {
+    mostExpensive = cart[i];
   }
 
-  if (cart[i].price < cheapest) {
-    cheapest = cart[i].name;
+  if (cart[i].price < cheapest.price) {
+    cheapest = cart[i];
   }
 }
 
-console.log(`Total price: ${total}`);
-console.log(`Most expensive: ${expensive}`);
-console.log(`Cheapest: ${cheapest}`);
+console.log(`Total Price: ${total}`);
+console.log(`Most Expensive: ${mostExpensive.name}`);
+console.log(`Cheapest: ${cheapest.name}`);
