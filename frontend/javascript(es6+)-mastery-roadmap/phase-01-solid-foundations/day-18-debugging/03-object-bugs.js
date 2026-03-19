@@ -1,20 +1,25 @@
-// Example 1: Undefined property
+// Example 1: Safe property access
 const user = {
   name: "Ali",
   age: 20,
 };
 
-console.log(user.email.toLowerCase());
+if (user.email) {
+  console.log(user.email.toLowerCase());
+} else {
+  console.log("Email not found");
+}
 
-// Example 2: Wrong property name
+// Example 2: Add missing property
 const car = {
   brand: "Toyota",
   model: "Corolla",
+  year: 2020,
 };
 
 console.log(car.year);
 
-// Example 3: Nested object error
+// Example 3: Check nested property
 const person = {
   name: "Sara",
   address: {
@@ -22,13 +27,17 @@ const person = {
   },
 };
 
-console.log(person.address.country.toUpperCase());
+if (person.address.country) {
+  console.log(person.address.country.toUpperCase());
+} else {
+  console.log("Country not available");
+}
 
-// Example 4: Function inside object bug
+// Example 4: Provide correct arguments
 const calculator = {
   add: function (a, b) {
     return a + b;
   },
 };
 
-console.log(calculator.add(2)); // missing argument
+console.log(calculator.add(2, 3));
