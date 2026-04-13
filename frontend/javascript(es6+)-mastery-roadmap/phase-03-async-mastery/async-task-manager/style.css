@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 40px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 5px;
+}
+
+li {
+  margin: 10px;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+}
